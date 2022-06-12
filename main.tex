@@ -27,14 +27,12 @@
 %	ARTICLE INFORMATION
 %----------------------------------------------------------------------------------------
 
-\title{Effective Methods for Capturing Cattle Rustlers} % The article title
+\title{Central Operativa SAL/T} % The article title
 
 \author{
-	\authorstyle{John Marston\textsuperscript{1,2,3} and Bonnie MacFarlane\textsuperscript{2,3}} % Authors
+	\authorstyle{Matías Sambrizzi \textsuperscript{1} and Fernando Iglesias\textsuperscript{1}} % Authors
 	\newline\newline % Space before institutions
-	\textsuperscript{1}\institution{Universidad Nacional Autónoma de México, Mexico City, Mexico}\\ % Institution 1
-	\textsuperscript{2}\institution{University of Texas at Austin, Texas, United States of America}\\ % Institution 2
-	\textsuperscript{3}\institution{\texttt{LaTeXTemplates.com}} % Institution 3
+	\textsuperscript{1}\institution{Universidad de Buenos Aires, Buenos Aires, Argentina}\\ % Institution 1
 }
 
 % Example of a one line author/institution relationship
@@ -54,13 +52,25 @@
 %	ABSTRACT
 %----------------------------------------------------------------------------------------
 
-\lettrineabstract{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus nisi ligula. Morbi laoreet ex ligula, vitae lobortis purus mattis vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ac metus ut turpis mollis placerat et nec enim. Duis tristique nibh maximus faucibus facilisis. Praesent in consequat leo. Maecenas condimentum ex rhoncus, elementum diam vel, malesuada ante.}
+\lettrineabstract{En el presente artículo se presentan los avances del desarrollo de una arquitectura modular para la Central Operativa SAL/T basado en el paradigma de Internet de las Cosas (IoT). Este proyecto es el complemento en materia de \textit{software} de un prototipo realizado para Trenes Argentinos, entidad que se ocupa de gestionar y operar la red ferroviaria de la Argentina.}
+
+\lettrineabstract{Keywords: MQTT, JSON, ...}
+
 
 %----------------------------------------------------------------------------------------
 %	ARTICLE CONTENTS
 %----------------------------------------------------------------------------------------
 
-\section{Section}
+\section{Motivación y Contexto}
+
+Las formaciones ferroviarias cuentan con diferentes sistemas de seguridad a bordo, siendo estos, equipos que se encargan de supervisar el correcto funcionamiento de los subsistemas críticos. Ante una falla en uno de los subsistemas, una formación ferroviaria se detiene inmediatamente por la activación automática de las señales de corte de tracción (\textit{CT}) y frenado de emergencia (\textit{FE}). En esta situación, el conductor debe llevar la formación a un lugar seguro para que los pasajeros puedan descender y, posteriormente, trasladarla a un taller para que pueda ser reparada.
+
+El \textit{SAL/T} \footnote{referencia al artículo de Di Vito}, según sus siglas, Sistema de Aislamiento Limitado o Total, es un sistema que le permite al maquinista de una formación ferroviaria la posibilidad de activar y desactivar del modo aislado limitado. En este modo, el equipo permite la circulación de la formación al desactivar las señales de corte de tracción y freno de emergencia generadas por los otros subsistemas. Para que esta operación se realice de forma segura, se debe monitorear la velocidad de la formación tal que sea posible evitar que supere cierto valor máximo. 
+
+A partir del prototipo físico del SAL/T, se presentan avances en el desarrollo de una central operativa, es una plataforma web que cuenta con una unidad lógica de compartición y empaquetado de software, que posibilita la administación, la configuración y el monitoreo en tiempo real de la información recibida y transmitida por parte de cada dispositivo SAL/T.
+
+
+
 
 This sentence requires citation \citep{Reference1}. This sentence requires multiple citations to imply that it is better supported \citep{Reference2,Reference3}. Finally, when conducting an appeal to authority, it can be useful to cite a reference in-text, much like \cite{Reference1} do quite a bit. Oh, and make sure to check out the bear in Figure \ref{bear}.
 
