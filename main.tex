@@ -82,16 +82,35 @@ En la sección III, según el \textit{stack} de una solución IoT, se presentan 
 
 \section{Arquitectura propuesta}
 
-En el marco del presente trabajo, la arquitectura del sistema se encuentra segmentada tal como se puede observar en la Fig. 1.
+En el marco del presente trabajo, la arquitectura esta estratificada en capas
+tal como se ilustra en la fiugra X. A continuación se describen cada una de ellas
 
+\section{Capa de dispositivos}
 
-\subsection{}
+\section{Capa de conectividad}
 
-\subsection{}
+\section{Capa de almacenamiento}
 
-\subsection{}
+La capa de almacenamiento por un lado se encuentra constituida por el sistema distribuido \textit{Kafka} que se encarga
+de almacenar los datos de la aplicación. Entre ellos se destacan los mensajes MQTT enviados
+por los dispositivos SAL/T, como también la información referida a las formaciones y a los SAL/T que las ocupan. 
+Ademas, se tienen servicios de procesamiento de datos que se encargan de adaptar la información de los tópicos en
+datos que posteriormente serán consumidos por los servicios que integran la capa superior. Por otro lado,
+se tiene una base de datos SQL que se utiliza para almacenar los datos del servicio de autenticación y 
+Hasura. Los conectores se encargan de insertar los datos que se quieran disponer a la capa de 
+visualización.
 
+\section{Capa de interacción}
 
+La capa de interacción se encarga de proveer la autenticación, la consultas e inserción de datos en el sistema.
+La misma, esta constituida por un backend y un servicio de autenticación desarrollados en Kotlin utilizando el framework Ktor y
+Hasura que se encarga de generar la API de consultar a la base de datos. Este herramienta, 
+facilita la comunicación entre el frontend y la base de datos SQL. 
+
+\section{Capa de visualizacion}
+
+En la capa de visualización se desarrollo una aplicación web utilizando el lenguaje
+de programación Typescript y el framework React.
 
 \section{Conclusiones}
 
