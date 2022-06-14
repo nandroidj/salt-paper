@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.27)  12 JUN 2022 13:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.27)  14 JUN 2022 20:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1422,16 +1422,16 @@ followed by the required stuff, so I'm ignoring it.
 ./main.tex:72: Missing $ inserted.
 <inserted text> 
                 $
-l.72 
-     
+l.72 \section
+             {Descripción de la problemática a resolver}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ./main.tex:72: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.72 
-     
+l.72 \section
+             {Descripción de la problemática a resolver}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1441,98 +1441,2473 @@ my insertion and my current dilemma will both disappear.
 ./main.tex:72: Missing } inserted.
 <inserted text> 
                 }
-l.72 
-     
+l.72 \section
+             {Descripción de la problemática a resolver}
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./main.tex:75: Use of \let doesn't match its definition.
-\new@ifnextchar #1#2#3->\let \reserved@d 
-                                         = #1\def \reserved@a {#2}\def \rese...
-l.75 This sentence requires citation \citep
-                                           {Reference1}. This sentence requi...
+./main.tex:72: Use of \let doesn't match its definition.
+\@afterindenttrue ->\let \if@afterindent 
+                                         \iftrue 
+l.72 \section
+             {Descripción de la problemática a resolver}
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-./main.tex:75: Use of \let doesn't match its definition.
+./main.tex:72: Use of \let doesn't match its definition.
+\@afterindentfalse ->\let \if@afterindent 
+                                          \iffalse 
+l.72 \section
+             {Descripción de la problemática a resolver}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:72: Use of \let doesn't match its definition.
 \new@ifnextchar #1#2#3->\let \reserved@d 
                                          = #1\def \reserved@a {#2}\def \rese...
-l.75 ...o imply that it is better supported \citep
+l.72 \section
+             {Descripción de la problemática a resolver}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:80: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.80 En la sección III, según el \textit{stack}
+                                                  de una solución IoT, se p...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:80: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.80 En la sección III, según el \textit{stack}
+                                                  de una solución IoT, se p...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:80: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.80 En la sección III, según el \textit{stack}
+                                                  de una solución IoT, se p...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:80: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.80 En la sección III, según el \textit{stack}
+                                                  de una solución IoT, se p...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:80: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.80 En la sección III, según el \textit{stack}
+                                                  de una solución IoT, se p...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:80: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.80 En la sección III, según el \textit{stack}
+                                                  de una solución IoT, se p...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:80: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.80 En la sección III, según el \textit{stack}
+                                                  de una solución IoT, se p...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:83: Use of \let doesn't match its definition.
+\@afterindenttrue ->\let \if@afterindent 
+                                         \iftrue 
+l.83 \section
+             {Arquitectura propuesta}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:83: Use of \let doesn't match its definition.
+\@afterindentfalse ->\let \if@afterindent 
+                                          \iffalse 
+l.83 \section
+             {Arquitectura propuesta}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:83: Use of \let doesn't match its definition.
+\new@ifnextchar #1#2#3->\let \reserved@d 
+                                         = #1\def \reserved@a {#2}\def \rese...
+l.83 \section
+             {Arquitectura propuesta}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:88: Use of \let doesn't match its definition.
+\@afterindenttrue ->\let \if@afterindent 
+                                         \iftrue 
+l.88 \subsection
+                {Capa de dispositivos}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:88: Use of \let doesn't match its definition.
+\@afterindentfalse ->\let \if@afterindent 
+                                          \iffalse 
+l.88 \subsection
+                {Capa de dispositivos}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:88: Use of \let doesn't match its definition.
+\new@ifnextchar #1#2#3->\let \reserved@d 
+                                         = #1\def \reserved@a {#2}\def \rese...
+l.88 \subsection
+                {Capa de dispositivos}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.90 ...n al kit de desarrolo \textit{Nucleo F429}
+                                                   dado que cuenta con un ma...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.90 ...n al kit de desarrolo \textit{Nucleo F429}
+                                                   dado que cuenta con un ma...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.90 ...n al kit de desarrolo \textit{Nucleo F429}
+                                                   dado que cuenta con un ma...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.90 ...n al kit de desarrolo \textit{Nucleo F429}
+                                                   dado que cuenta con un ma...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.90 ...n al kit de desarrolo \textit{Nucleo F429}
+                                                   dado que cuenta con un ma...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.90 ...n al kit de desarrolo \textit{Nucleo F429}
+                                                   dado que cuenta con un ma...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.90 ...n al kit de desarrolo \textit{Nucleo F429}
+                                                   dado que cuenta con un ma...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.90 ...tá desarrollando un cliente \textit{MQTT}
+                                                  que permite la publicació...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.90 ...tá desarrollando un cliente \textit{MQTT}
+                                                  que permite la publicació...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.90 ...tá desarrollando un cliente \textit{MQTT}
+                                                  que permite la publicació...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.90 ...tá desarrollando un cliente \textit{MQTT}
+                                                  que permite la publicació...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.90 ...tá desarrollando un cliente \textit{MQTT}
+                                                  que permite la publicació...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.90 ...tá desarrollando un cliente \textit{MQTT}
+                                                  que permite la publicació...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.90 ...tá desarrollando un cliente \textit{MQTT}
+                                                  que permite la publicació...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.90 ...r ejemplo, los perfiles de \textit{chopeo}
+                                                   que un operario publique ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.90 ...r ejemplo, los perfiles de \textit{chopeo}
+                                                   que un operario publique ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.90 ...r ejemplo, los perfiles de \textit{chopeo}
+                                                   que un operario publique ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.90 ...r ejemplo, los perfiles de \textit{chopeo}
+                                                   que un operario publique ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.90 ...r ejemplo, los perfiles de \textit{chopeo}
+                                                   que un operario publique ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.90 ...r ejemplo, los perfiles de \textit{chopeo}
+                                                   que un operario publique ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:90: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.90 ...r ejemplo, los perfiles de \textit{chopeo}
+                                                   que un operario publique ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:93: Use of \let doesn't match its definition.
+\@afterindenttrue ->\let \if@afterindent 
+                                         \iftrue 
+l.93 \subsection
+                {Capa de conectividad}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:93: Use of \let doesn't match its definition.
+\@afterindentfalse ->\let \if@afterindent 
+                                          \iffalse 
+l.93 \subsection
+                {Capa de conectividad}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:93: Use of \let doesn't match its definition.
+\new@ifnextchar #1#2#3->\let \reserved@d 
+                                         = #1\def \reserved@a {#2}\def \rese...
+l.93 \subsection
+                {Capa de conectividad}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.95 ...ión entre los dispositivos \textit{SAL/T}
+                                                   y la capa de almacenamien...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.95 ...ión entre los dispositivos \textit{SAL/T}
+                                                   y la capa de almacenamien...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.95 ...ión entre los dispositivos \textit{SAL/T}
+                                                   y la capa de almacenamien...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.95 ...ión entre los dispositivos \textit{SAL/T}
+                                                   y la capa de almacenamien...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.95 ...ión entre los dispositivos \textit{SAL/T}
+                                                   y la capa de almacenamien...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.95 ...ión entre los dispositivos \textit{SAL/T}
+                                                   y la capa de almacenamien...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.95 ...ión entre los dispositivos \textit{SAL/T}
+                                                   y la capa de almacenamien...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.95 ...miento, se utiliza un \textit{Broker MQTT}
+                                                   que oficia de orquestador...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.95 ...miento, se utiliza un \textit{Broker MQTT}
+                                                   que oficia de orquestador...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.95 ...miento, se utiliza un \textit{Broker MQTT}
+                                                   que oficia de orquestador...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.95 ...miento, se utiliza un \textit{Broker MQTT}
+                                                   que oficia de orquestador...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.95 ...miento, se utiliza un \textit{Broker MQTT}
+                                                   que oficia de orquestador...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.95 ...miento, se utiliza un \textit{Broker MQTT}
+                                                   que oficia de orquestador...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.95 ...miento, se utiliza un \textit{Broker MQTT}
+                                                   que oficia de orquestador...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.95 ...tre el cliente, dispositivo \textit{SAL/T}
+                                                  , que publica los mensajes...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.95 ...tre el cliente, dispositivo \textit{SAL/T}
+                                                  , que publica los mensajes...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.95 ...tre el cliente, dispositivo \textit{SAL/T}
+                                                  , que publica los mensajes...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.95 ...tre el cliente, dispositivo \textit{SAL/T}
+                                                  , que publica los mensajes...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.95 ...tre el cliente, dispositivo \textit{SAL/T}
+                                                  , que publica los mensajes...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.95 ...tre el cliente, dispositivo \textit{SAL/T}
+                                                  , que publica los mensajes...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.95 ...tre el cliente, dispositivo \textit{SAL/T}
+                                                  , que publica los mensajes...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.95 ...que se suscribe, el sistema \textit{Kafka}
+                                                  , para la lectura de la in...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.95 ...que se suscribe, el sistema \textit{Kafka}
+                                                  , para la lectura de la in...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.95 ...que se suscribe, el sistema \textit{Kafka}
+                                                  , para la lectura de la in...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.95 ...que se suscribe, el sistema \textit{Kafka}
+                                                  , para la lectura de la in...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.95 ...que se suscribe, el sistema \textit{Kafka}
+                                                  , para la lectura de la in...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.95 ...que se suscribe, el sistema \textit{Kafka}
+                                                  , para la lectura de la in...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:95: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.95 ...que se suscribe, el sistema \textit{Kafka}
+                                                  , para la lectura de la in...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+
+Underfull \hbox (badness 2027) has occurred while \output is active
+[]\T1/XCharter-TLF/b/n/10 (+20) Para la co-mu-ni-caci�n en-tre los dis-pos-i-tivos
+ []
+
+./main.tex:97: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.97 ... agregar la capa de seguridad \textit{TLS}
+                                                  . En este sentido, resulta...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:97: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.97 ... agregar la capa de seguridad \textit{TLS}
+                                                  . En este sentido, resulta...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:97: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.97 ... agregar la capa de seguridad \textit{TLS}
+                                                  . En este sentido, resulta...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:97: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.97 ... agregar la capa de seguridad \textit{TLS}
+                                                  . En este sentido, resulta...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:97: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.97 ... agregar la capa de seguridad \textit{TLS}
+                                                  . En este sentido, resulta...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:97: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.97 ... agregar la capa de seguridad \textit{TLS}
+                                                  . En este sentido, resulta...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:97: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.97 ... agregar la capa de seguridad \textit{TLS}
+                                                  . En este sentido, resulta...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:97: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.97 ...able utilizar el certificado \textit{X509}
+                                                   para prevenir ataques del...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:97: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.97 ...able utilizar el certificado \textit{X509}
+                                                   para prevenir ataques del...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:97: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.97 ...able utilizar el certificado \textit{X509}
+                                                   para prevenir ataques del...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:97: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.97 ...able utilizar el certificado \textit{X509}
+                                                   para prevenir ataques del...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:97: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.97 ...able utilizar el certificado \textit{X509}
+                                                   para prevenir ataques del...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:97: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.97 ...able utilizar el certificado \textit{X509}
+                                                   para prevenir ataques del...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:97: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.97 ...able utilizar el certificado \textit{X509}
+                                                   para prevenir ataques del...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:97: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.97 ... del tipo \textit{adversary-in-the-middle}
+                                                   y utilizar certificados e...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:97: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.97 ... del tipo \textit{adversary-in-the-middle}
+                                                   y utilizar certificados e...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:97: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.97 ... del tipo \textit{adversary-in-the-middle}
+                                                   y utilizar certificados e...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:97: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.97 ... del tipo \textit{adversary-in-the-middle}
+                                                   y utilizar certificados e...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:97: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.97 ... del tipo \textit{adversary-in-the-middle}
+                                                   y utilizar certificados e...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:97: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.97 ... del tipo \textit{adversary-in-the-middle}
+                                                   y utilizar certificados e...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:97: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.97 ... del tipo \textit{adversary-in-the-middle}
+                                                   y utilizar certificados e...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:100: Use of \let doesn't match its definition.
+\@afterindenttrue ->\let \if@afterindent 
+                                         \iftrue 
+l.100 \subsection
+                 {Capa de almacenamiento}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:100: Use of \let doesn't match its definition.
+\@afterindentfalse ->\let \if@afterindent 
+                                          \iffalse 
+l.100 \subsection
+                 {Capa de almacenamiento}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:100: Use of \let doesn't match its definition.
+\new@ifnextchar #1#2#3->\let \reserved@d 
+                                         = #1\def \reserved@a {#2}\def \rese...
+l.100 \subsection
+                 {Capa de almacenamiento}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:102: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.102 ...por el sistema distribuido \textit{Kafka}
+                                                   que se encarga
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:102: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.102 ...por el sistema distribuido \textit{Kafka}
+                                                   que se encarga
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:102: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.102 ...por el sistema distribuido \textit{Kafka}
+                                                   que se encarga
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:102: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.102 ...por el sistema distribuido \textit{Kafka}
+                                                   que se encarga
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:102: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.102 ...por el sistema distribuido \textit{Kafka}
+                                                   que se encarga
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:102: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.102 ...por el sistema distribuido \textit{Kafka}
+                                                   que se encarga
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:102: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.102 ...por el sistema distribuido \textit{Kafka}
+                                                   que se encarga
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:111: Use of \let doesn't match its definition.
+\@afterindenttrue ->\let \if@afterindent 
+                                         \iftrue 
+l.111 \subsection
+                 {Capa de interacción}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:111: Use of \let doesn't match its definition.
+\@afterindentfalse ->\let \if@afterindent 
+                                          \iffalse 
+l.111 \subsection
+                 {Capa de interacción}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:111: Use of \let doesn't match its definition.
+\new@ifnextchar #1#2#3->\let \reserved@d 
+                                         = #1\def \reserved@a {#2}\def \rese...
+l.111 \subsection
+                 {Capa de interacción}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.113 ...sarrollado en el lenguaje \textit{Kotlin}
+                                                   en conjunto con el \texti...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.113 ...sarrollado en el lenguaje \textit{Kotlin}
+                                                   en conjunto con el \texti...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.113 ...sarrollado en el lenguaje \textit{Kotlin}
+                                                   en conjunto con el \texti...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.113 ...sarrollado en el lenguaje \textit{Kotlin}
+                                                   en conjunto con el \texti...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.113 ...sarrollado en el lenguaje \textit{Kotlin}
+                                                   en conjunto con el \texti...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.113 ...sarrollado en el lenguaje \textit{Kotlin}
+                                                   en conjunto con el \texti...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.113 ...sarrollado en el lenguaje \textit{Kotlin}
+                                                   en conjunto con el \texti...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.113 ...in} en conjunto con el \textit{framework}
+                                                   \textit{Ktor} un microser...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.113 ...in} en conjunto con el \textit{framework}
+                                                   \textit{Ktor} un microser...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.113 ...in} en conjunto con el \textit{framework}
+                                                   \textit{Ktor} un microser...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.113 ...in} en conjunto con el \textit{framework}
+                                                   \textit{Ktor} un microser...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.113 ...in} en conjunto con el \textit{framework}
+                                                   \textit{Ktor} un microser...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.113 ...in} en conjunto con el \textit{framework}
+                                                   \textit{Ktor} un microser...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.113 ...in} en conjunto con el \textit{framework}
+                                                   \textit{Ktor} un microser...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.113 ...o con el \textit{framework} \textit{Ktor}
+                                                   un microservicio de auten...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.113 ...o con el \textit{framework} \textit{Ktor}
+                                                   un microservicio de auten...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.113 ...o con el \textit{framework} \textit{Ktor}
+                                                   un microservicio de auten...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.113 ...o con el \textit{framework} \textit{Ktor}
+                                                   un microservicio de auten...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.113 ...o con el \textit{framework} \textit{Ktor}
+                                                   un microservicio de auten...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.113 ...o con el \textit{framework} \textit{Ktor}
+                                                   un microservicio de auten...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.113 ...o con el \textit{framework} \textit{Ktor}
+                                                   un microservicio de auten...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.113 ...ivos roles y también el \textit{backend}
+                                                  . Entre sus tareas princip...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.113 ...ivos roles y también el \textit{backend}
+                                                  . Entre sus tareas princip...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.113 ...ivos roles y también el \textit{backend}
+                                                  . Entre sus tareas princip...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.113 ...ivos roles y también el \textit{backend}
+                                                  . Entre sus tareas princip...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.113 ...ivos roles y también el \textit{backend}
+                                                  . Entre sus tareas princip...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.113 ...ivos roles y también el \textit{backend}
+                                                  . Entre sus tareas princip...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.113 ...ivos roles y también el \textit{backend}
+                                                  . Entre sus tareas princip...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.113 ...s relacionadas al protocolo \textit{MQTT}
+                                                   para la actualización de...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.113 ...s relacionadas al protocolo \textit{MQTT}
+                                                   para la actualización de...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.113 ...s relacionadas al protocolo \textit{MQTT}
+                                                   para la actualización de...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.113 ...s relacionadas al protocolo \textit{MQTT}
+                                                   para la actualización de...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.113 ...s relacionadas al protocolo \textit{MQTT}
+                                                   para la actualización de...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.113 ...s relacionadas al protocolo \textit{MQTT}
+                                                   para la actualización de...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.113 ...s relacionadas al protocolo \textit{MQTT}
+                                                   para la actualización de...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.113 ... uso de la capa de seguridad \textit{TLS}
+                                                  , y la indexación de los ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.113 ... uso de la capa de seguridad \textit{TLS}
+                                                  , y la indexación de los ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.113 ... uso de la capa de seguridad \textit{TLS}
+                                                  , y la indexación de los ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.113 ... uso de la capa de seguridad \textit{TLS}
+                                                  , y la indexación de los ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.113 ... uso de la capa de seguridad \textit{TLS}
+                                                  , y la indexación de los ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.113 ... uso de la capa de seguridad \textit{TLS}
+                                                  , y la indexación de los ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:113: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.113 ... uso de la capa de seguridad \textit{TLS}
+                                                  , y la indexación de los ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.115 ...ás, se dispone del motor \textit{Hasura}
+                                                  , el cual se encuentra con...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.115 ...ás, se dispone del motor \textit{Hasura}
+                                                  , el cual se encuentra con...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.115 ...ás, se dispone del motor \textit{Hasura}
+                                                  , el cual se encuentra con...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.115 ...ás, se dispone del motor \textit{Hasura}
+                                                  , el cual se encuentra con...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.115 ...ás, se dispone del motor \textit{Hasura}
+                                                  , el cual se encuentra con...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.115 ...ás, se dispone del motor \textit{Hasura}
+                                                  , el cual se encuentra con...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.115 ...ás, se dispone del motor \textit{Hasura}
+                                                  , el cual se encuentra con...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.115 ... de datos relacional (\textit{PostgreSQL}
+                                                  ) basado en el lenguaje de...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.115 ... de datos relacional (\textit{PostgreSQL}
+                                                  ) basado en el lenguaje de...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.115 ... de datos relacional (\textit{PostgreSQL}
+                                                  ) basado en el lenguaje de...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.115 ... de datos relacional (\textit{PostgreSQL}
+                                                  ) basado en el lenguaje de...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.115 ... de datos relacional (\textit{PostgreSQL}
+                                                  ) basado en el lenguaje de...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.115 ... de datos relacional (\textit{PostgreSQL}
+                                                  ) basado en el lenguaje de...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.115 ... de datos relacional (\textit{PostgreSQL}
+                                                  ) basado en el lenguaje de...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.115 ...aje de consulta estructurado \textit{SQL}
+                                                  , que permite exponer una ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.115 ...aje de consulta estructurado \textit{SQL}
+                                                  , que permite exponer una ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.115 ...aje de consulta estructurado \textit{SQL}
+                                                  , que permite exponer una ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.115 ...aje de consulta estructurado \textit{SQL}
+                                                  , que permite exponer una ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.115 ...aje de consulta estructurado \textit{SQL}
+                                                  , que permite exponer una ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.115 ...aje de consulta estructurado \textit{SQL}
+                                                  , que permite exponer una ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.115 ...aje de consulta estructurado \textit{SQL}
+                                                  , que permite exponer una ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.115 ... permite exponer una \textit{API GraphQL}
+                                                   a aquellos clientes que d...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.115 ... permite exponer una \textit{API GraphQL}
+                                                   a aquellos clientes que d...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.115 ... permite exponer una \textit{API GraphQL}
+                                                   a aquellos clientes que d...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.115 ... permite exponer una \textit{API GraphQL}
+                                                   a aquellos clientes que d...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.115 ... permite exponer una \textit{API GraphQL}
+                                                   a aquellos clientes que d...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.115 ... permite exponer una \textit{API GraphQL}
+                                                   a aquellos clientes que d...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.115 ... permite exponer una \textit{API GraphQL}
+                                                   a aquellos clientes que d...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.115 ...orrespondiente dispositivo \textit{SAL/T}
+                                                   y diseño destinado al \t...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.115 ...orrespondiente dispositivo \textit{SAL/T}
+                                                   y diseño destinado al \t...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.115 ...orrespondiente dispositivo \textit{SAL/T}
+                                                   y diseño destinado al \t...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.115 ...orrespondiente dispositivo \textit{SAL/T}
+                                                   y diseño destinado al \t...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.115 ...orrespondiente dispositivo \textit{SAL/T}
+                                                   y diseño destinado al \t...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.115 ...orrespondiente dispositivo \textit{SAL/T}
+                                                   y diseño destinado al \t...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.115 ...orrespondiente dispositivo \textit{SAL/T}
+                                                   y diseño destinado al \t...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.115 ... y diseño destinado al \textit{frontend}
+                                                  . Más aún, el enlace per...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.115 ... y diseño destinado al \textit{frontend}
+                                                  . Más aún, el enlace per...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.115 ... y diseño destinado al \textit{frontend}
+                                                  . Más aún, el enlace per...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.115 ... y diseño destinado al \textit{frontend}
+                                                  . Más aún, el enlace per...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.115 ... y diseño destinado al \textit{frontend}
+                                                  . Más aún, el enlace per...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.115 ... y diseño destinado al \textit{frontend}
+                                                  . Más aún, el enlace per...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:115: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.115 ... y diseño destinado al \textit{frontend}
+                                                  . Más aún, el enlace per...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:118: Use of \let doesn't match its definition.
+\@afterindenttrue ->\let \if@afterindent 
+                                         \iftrue 
+l.118 \subsection
+                 {Capa de visualizacion}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:118: Use of \let doesn't match its definition.
+\@afterindentfalse ->\let \if@afterindent 
+                                          \iffalse 
+l.118 \subsection
+                 {Capa de visualizacion}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:118: Use of \let doesn't match its definition.
+\new@ifnextchar #1#2#3->\let \reserved@d 
+                                         = #1\def \reserved@a {#2}\def \rese...
+l.118 \subsection
+                 {Capa de visualizacion}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:123: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.123 ...uaje de programación \textit{TypeScript}
+                                                   junto con la biblioteca g...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:123: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.123 ...uaje de programación \textit{TypeScript}
+                                                   junto con la biblioteca g...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:123: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.123 ...uaje de programación \textit{TypeScript}
+                                                   junto con la biblioteca g...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:123: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.123 ...uaje de programación \textit{TypeScript}
+                                                   junto con la biblioteca g...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:123: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.123 ...uaje de programación \textit{TypeScript}
+                                                   junto con la biblioteca g...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:123: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.123 ...uaje de programación \textit{TypeScript}
+                                                   junto con la biblioteca g...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:123: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.123 ...uaje de programación \textit{TypeScript}
+                                                   junto con la biblioteca g...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:123: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.123 ...con la biblioteca gráfica \textit{React}
+                                                   para brindar una web reac...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:123: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.123 ...con la biblioteca gráfica \textit{React}
+                                                   para brindar una web reac...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:123: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.123 ...con la biblioteca gráfica \textit{React}
+                                                   para brindar una web reac...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:123: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.123 ...con la biblioteca gráfica \textit{React}
+                                                   para brindar una web reac...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:123: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.123 ...con la biblioteca gráfica \textit{React}
+                                                   para brindar una web reac...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:123: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.123 ...con la biblioteca gráfica \textit{React}
+                                                   para brindar una web reac...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:123: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.123 ...con la biblioteca gráfica \textit{React}
+                                                   para brindar una web reac...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:126: Use of \let doesn't match its definition.
+\@afterindenttrue ->\let \if@afterindent 
+                                         \iftrue 
+l.126 \section
+              {Conclusiones}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:126: Use of \let doesn't match its definition.
+\@afterindentfalse ->\let \if@afterindent 
+                                          \iffalse 
+l.126 \section
+              {Conclusiones}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:126: Use of \let doesn't match its definition.
+\new@ifnextchar #1#2#3->\let \reserved@d 
+                                         = #1\def \reserved@a {#2}\def \rese...
+l.126 \section
+              {Conclusiones}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:128: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.128 ...uitectura en materia de \textit{software}
+                                                   y de \textit{firmware} pa...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:128: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.128 ...uitectura en materia de \textit{software}
+                                                   y de \textit{firmware} pa...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:128: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.128 ...uitectura en materia de \textit{software}
+                                                   y de \textit{firmware} pa...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:128: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.128 ...uitectura en materia de \textit{software}
+                                                   y de \textit{firmware} pa...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:128: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.128 ...uitectura en materia de \textit{software}
+                                                   y de \textit{firmware} pa...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:128: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.128 ...uitectura en materia de \textit{software}
+                                                   y de \textit{firmware} pa...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:128: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.128 ...uitectura en materia de \textit{software}
+                                                   y de \textit{firmware} pa...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:128: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.128 ... \textit{software} y de \textit{firmware}
+                                                   para la operabilidad de l...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:128: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.128 ... \textit{software} y de \textit{firmware}
+                                                   para la operabilidad de l...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:128: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.128 ... \textit{software} y de \textit{firmware}
+                                                   para la operabilidad de l...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:128: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.128 ... \textit{software} y de \textit{firmware}
+                                                   para la operabilidad de l...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:128: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.128 ... \textit{software} y de \textit{firmware}
+                                                   para la operabilidad de l...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:128: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.128 ... \textit{software} y de \textit{firmware}
+                                                   para la operabilidad de l...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:128: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.128 ... \textit{software} y de \textit{firmware}
+                                                   para la operabilidad de l...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:133: Use of \let doesn't match its definition.
+\@afterindenttrue ->\let \if@afterindent 
+                                         \iftrue 
+l.133 \section
+              {Próximos pasos}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:133: Use of \let doesn't match its definition.
+\@afterindentfalse ->\let \if@afterindent 
+                                          \iffalse 
+l.133 \section
+              {Próximos pasos}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:133: Use of \let doesn't match its definition.
+\new@ifnextchar #1#2#3->\let \reserved@d 
+                                         = #1\def \reserved@a {#2}\def \rese...
+l.133 \section
+              {Próximos pasos}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:135: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.135 ...nicaciones agregando la capa \textit{TLS}
+                                                   en el protocolo \textit{M...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:135: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.135 ...nicaciones agregando la capa \textit{TLS}
+                                                   en el protocolo \textit{M...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:135: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.135 ...nicaciones agregando la capa \textit{TLS}
+                                                   en el protocolo \textit{M...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:135: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.135 ...nicaciones agregando la capa \textit{TLS}
+                                                   en el protocolo \textit{M...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:135: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.135 ...nicaciones agregando la capa \textit{TLS}
+                                                   en el protocolo \textit{M...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:135: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.135 ...nicaciones agregando la capa \textit{TLS}
+                                                   en el protocolo \textit{M...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:135: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.135 ...nicaciones agregando la capa \textit{TLS}
+                                                   en el protocolo \textit{M...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:135: Use of \let doesn't match its definition.
+\check@nocorr@ ...ocorr #3\@nil ->\let \check@icl 
+                                                  \maybe@ic \def \check@icr ...
+l.135 ...textit{TLS} en el protocolo \textit{MQTT}
+                                                  .
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:135: Use of \let doesn't match its definition.
+\selectfont  ...\@empty \else \let \f@shape@saved 
+                                                  \f@shape \let \f@series@sa...
+l.135 ...textit{TLS} en el protocolo \textit{MQTT}
+                                                  .
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:135: Use of \let doesn't match its definition.
+\selectfont  ...ved \f@shape \let \f@series@saved 
+                                                  \f@series \delayed@f@adjus...
+l.135 ...textit{TLS} en el protocolo \textit{MQTT}
+                                                  .
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:135: Use of \let doesn't match its definition.
+\maybe@load@fontshape ->\begingroup \let \typeout 
+                                                  \@font@info \try@load@font...
+l.135 ...textit{TLS} en el protocolo \textit{MQTT}
+                                                  .
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:135: Use of \let doesn't match its definition.
+\set@display@protect ->\let \protect 
+                                     \string 
+l.135 ...textit{TLS} en el protocolo \textit{MQTT}
+                                                  .
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:135: Use of \let doesn't match its definition.
+\selectfont  ...on \fi \let \delayed@f@adjustment 
+                                                  \@empty \fi \@forced@serie...
+l.135 ...textit{TLS} en el protocolo \textit{MQTT}
+                                                  .
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:135: Use of \let doesn't match its definition.
+\@forced@seriesfalse ->\let \if@forced@series 
+                                              \iffalse 
+l.135 ...textit{TLS} en el protocolo \textit{MQTT}
+                                                  .
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:139: Use of \let doesn't match its definition.
+\new@ifnextchar #1#2#3->\let \reserved@d 
+                                         = #1\def \reserved@a {#2}\def \rese...
+l.139 This sentence requires citation \citep
+                                            {Reference1}. This sentence requ...
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+./main.tex:139: Use of \let doesn't match its definition.
+\new@ifnextchar #1#2#3->\let \reserved@d 
+                                         = #1\def \reserved@a {#2}\def \rese...
+l.139 ... imply that it is better supported \citep
                                                   {Reference2,Reference3}. F...
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-./main.tex:75: Use of \let doesn't match its definition.
+./main.tex:139: Use of \let doesn't match its definition.
 <recently read> \etb@tgl@blx@block 
                                    
-l.75 ... cite a reference in-text, much like \cite
+l.139 ...cite a reference in-text, much like \cite
                                                   {Reference1} do quite a bi...
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-./main.tex:75: Use of \let doesn't match its definition.
+./main.tex:139: Use of \let doesn't match its definition.
 <recently read> \etb@tgl@blx@unit 
                                   
-l.75 ... cite a reference in-text, much like \cite
+l.139 ...cite a reference in-text, much like \cite
                                                   {Reference1} do quite a bi...
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-./main.tex:75: Use of \let doesn't match its definition.
+./main.tex:139: Use of \let doesn't match its definition.
 <recently read> \etb@tgl@blx@insert 
                                     
-l.75 ... cite a reference in-text, much like \cite
+l.139 ...cite a reference in-text, much like \cite
                                                   {Reference1} do quite a bi...
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-./main.tex:75: Use of \let doesn't match its definition.
+./main.tex:139: Use of \let doesn't match its definition.
 <recently read> \etb@tgl@blx@lastins 
                                      
-l.75 ... cite a reference in-text, much like \cite
+l.139 ...cite a reference in-text, much like \cite
                                                   {Reference1} do quite a bi...
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-./main.tex:75: Use of \let doesn't match its definition.
+./main.tex:139: Use of \let doesn't match its definition.
 <recently read> \etb@tgl@blx@keepunit 
                                       
-l.75 ... cite a reference in-text, much like \cite
+l.139 ...cite a reference in-text, much like \cite
                                                   {Reference1} do quite a bi...
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-./main.tex:75: Use of \let doesn't match its definition.
+./main.tex:139: Use of \let doesn't match its definition.
 \blx@initunit ...unit}\global \let \blx@unitpunct 
                                                   \newunitpunct \blx@imc@res...
-l.75 ... cite a reference in-text, much like \cite
+l.139 ...cite a reference in-text, much like \cite
                                                   {Reference1} do quite a bi...
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-./main.tex:75: Undefined control sequence.
+./main.tex:139: Undefined control sequence.
 \newunitpunct ->\addperiod 
                            \space 
-l.75 ... cite a reference in-text, much like \cite
+l.139 ...cite a reference in-text, much like \cite
                                                   {Reference1} do quite a bi...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1540,117 +3915,117 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./main.tex:75: Use of \let doesn't match its definition.
+./main.tex:139: Use of \let doesn't match its definition.
 \new@ifnextchar #1#2#3->\let \reserved@d 
                                          = #1\def \reserved@a {#2}\def \rese...
-l.75 ... cite a reference in-text, much like \cite
+l.139 ...cite a reference in-text, much like \cite
                                                   {Reference1} do quite a bi...
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-./main.tex:75: You can't use a prefix with `the character ='.
+./main.tex:139: You can't use a prefix with `the character ='.
 <to be read again> 
                    =
-l.75 ... cite a reference in-text, much like \cite
+l.139 ...cite a reference in-text, much like \cite
                                                   {Reference1} do quite a bi...
 I'll pretend you didn't say \long or \outer or \global or \protected.
 
-./main.tex:75: Use of \let doesn't match its definition.
+./main.tex:139: Use of \let doesn't match its definition.
 \@safe@activestrue ->\let \if@safe@actives 
                                            \iftrue 
-l.75 ...to check out the bear in Figure \ref{bear}
+l.139 ...o check out the bear in Figure \ref{bear}
                                                   .
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-./main.tex:75: Use of \let doesn't match its definition.
+./main.tex:139: Use of \let doesn't match its definition.
 \fontencoding  ...ng \f@encoding \let \enc@update 
                                                   \relax \else \let \enc@upd...
-l.75 ...to check out the bear in Figure \ref{bear}
+l.139 ...o check out the bear in Figure \ref{bear}
                                                   .
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-./main.tex:75: Use of \let doesn't match its definition.
+./main.tex:139: Use of \let doesn't match its definition.
 \normalfont  ...fault }\let \delayed@f@adjustment 
                                                   \@empty \UseHook {normalfo...
-l.75 ...to check out the bear in Figure \ref{bear}
+l.139 ...o check out the bear in Figure \ref{bear}
                                                   .
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-./main.tex:75: Use of \let doesn't match its definition.
+./main.tex:139: Use of \let doesn't match its definition.
 \selectfont  ...\@empty \else \let \f@shape@saved 
                                                   \f@shape \let \f@series@sa...
-l.75 ...to check out the bear in Figure \ref{bear}
+l.139 ...o check out the bear in Figure \ref{bear}
                                                   .
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-./main.tex:75: Use of \let doesn't match its definition.
+./main.tex:139: Use of \let doesn't match its definition.
 \selectfont  ...ved \f@shape \let \f@series@saved 
                                                   \f@series \delayed@f@adjus...
-l.75 ...to check out the bear in Figure \ref{bear}
+l.139 ...o check out the bear in Figure \ref{bear}
                                                   .
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-./main.tex:75: Use of \let doesn't match its definition.
+./main.tex:139: Use of \let doesn't match its definition.
 \maybe@load@fontshape ->\begingroup \let \typeout 
                                                   \@font@info \try@load@font...
-l.75 ...to check out the bear in Figure \ref{bear}
+l.139 ...o check out the bear in Figure \ref{bear}
                                                   .
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-./main.tex:75: Use of \let doesn't match its definition.
+./main.tex:139: Use of \let doesn't match its definition.
 \set@display@protect ->\let \protect 
                                      \string 
-l.75 ...to check out the bear in Figure \ref{bear}
+l.139 ...o check out the bear in Figure \ref{bear}
                                                   .
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-./main.tex:75: Use of \let doesn't match its definition.
+./main.tex:139: Use of \let doesn't match its definition.
 \selectfont  ...on \fi \let \delayed@f@adjustment 
                                                   \@empty \fi \@forced@serie...
-l.75 ...to check out the bear in Figure \ref{bear}
+l.139 ...o check out the bear in Figure \ref{bear}
                                                   .
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-./main.tex:75: Use of \let doesn't match its definition.
+./main.tex:139: Use of \let doesn't match its definition.
 \@forced@seriesfalse ->\let \if@forced@series 
                                               \iffalse 
-l.75 ...to check out the bear in Figure \ref{bear}
+l.139 ...o check out the bear in Figure \ref{bear}
                                                   .
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-./main.tex:75: Use of \let doesn't match its definition.
+./main.tex:139: Use of \let doesn't match its definition.
 \@safe@activesfalse ->\let \if@safe@actives 
                                             \iffalse 
-l.75 ...to check out the bear in Figure \ref{bear}
+l.139 ...o check out the bear in Figure \ref{bear}
                                                   .
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -1658,7 +4033,7 @@ made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
 )
-! Incomplete \iffalse; all text was ignored after line 75.
+! Incomplete \iffalse; all text was ignored after line 139.
 <inserted text> 
                 \fi 
 <*> main.tex
@@ -1674,11 +4049,11 @@ the matching `\fi'. I've inserted a `\fi'; this might work.
 
  
 Here is how much of TeX's memory you used:
- 18595 strings out of 478268
- 340926 string characters out of 5846347
- 1062522 words of memory out of 5000000
+ 18633 strings out of 478268
+ 341782 string characters out of 5846347
+ 1077522 words of memory out of 5000000
  36488 multiletter control sequences out of 15000+600000
- 535098 words of font info for 94 fonts, out of 8000000 for 9000
+ 540038 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  65i,6n,71p,1903b,848s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!

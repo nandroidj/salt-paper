@@ -71,7 +71,7 @@ A partir del prototipo físico del SAL/T previamente mencionado, se presentan lo
 
 \section{Descripción de la problemática a resolver}
 
-Los subsistemas asociados al SAL/T como la seguridad de puertas, el sistema de hombre vivo y la protección de coche a la deriva; son críticos debido a que, en caso de fallar, pueden ocasionar lesiones o muertes de personas, dañar el medio ambiento e inclusdo generar pérdidas materiales. 
+Los subsistemas asociados al SAL/T como la seguridad de puertas, el sistema de hombre vivo y la protección de coche a la deriva; son críticos debido a que, en caso de fallar, pueden ocasionar lesiones o muertes de personas, dañar el medio ambiento e incluso generar pérdidas materiales. 
 
 En efecto, la central operativa permite la administación y configuración de forma remota los dispositivos de supervisión de seguridad de cada formación ferroviaria, la visualización de los diferentes parámetros de interés involucrados tal que se encuentre al alcance de una o más personas asignadas dentro de una entidad y de este modo, sea posible optimizar la toma de decisiones.
 
@@ -87,7 +87,15 @@ tal como se ilustra en la fiugra X. A continuación se describen cada una de ell
 
 \subsection{Capa de dispositivos}
 
+Sobre la base de un prototipo del Sistema de Aislamiento Limitado o Total, se propuso la migración al kit de desarrolo \textit{Nucleo F429} dado que cuenta con un mayor soporte y funcionalidades de seguridad. Actualmente, se está desarrollando un cliente \textit{MQTT}que permite la publicación de la información proveniente de los subsistemas de falla, la velocidad de la información, entre otras variables; y llegado el caso, el dispositivo pueda realizar la lectura de diferentes parámetros configurables, como por ejemplo, los perfiles de \textit{chopeo} que un operario publique desde la Central Operativa SAL/T para una formación ferroviaria.  
+
+
 \subsection{Capa de conectividad}
+
+Para la comunicación entre los dispositivos \textit{SAL/T} y la capa de almacenamiento, se utiliza un \textit{Broker MQTT} que oficia de orquestador entre el cliente, dispositivo \textit{SAL/T}, que publica los mensajes y aquel que se suscribe, el sistema \textit{Kafka}, para la lectura de la información y su posterior procesamiento. 
+
+Dado que los mensajes intercambiados entre las partes contienen información sensible, se ha optado por agregar la capa de seguridad \textit{TLS}. En este sentido, resulta indispensable utilizar el certificado \textit{X509} para prevenir ataques del tipo \textit{adversary-in-the-middle} y utilizar certificados emitidos por autoridades reconocidas.
+
 
 \subsection{Capa de almacenamiento}
 
@@ -102,15 +110,18 @@ visualización.
 
 \subsection{Capa de interacción}
 
-La capa de interacción se encarga de proveer la autenticación, la consultas e inserción de datos en el sistema.
-La misma, esta constituida por un backend y un servicio de autenticación desarrollados en Kotlin utilizando el framework Ktor y
-Hasura que se encarga de generar la API de consultar a la base de datos. Este herramienta, 
-facilita la comunicación entre el frontend y la base de datos SQL. 
+La capa de interacción se encuentra conformada por tres unidades. Por un lado, se ha desarrollado en el lenguaje \textit{Kotlin} en conjunto con el \textit{framework} \textit{Ktor} un microservicio de autenticación donde es posible la gestión de los usuarios con sus respectivos roles y también el \textit{backend}. Entre sus tareas principales se encuentran las relacionadas al protocolo \textit{MQTT} para la actualización de los certificados que brindan seguridad a las comunicaciones, mediante el uso de la capa de seguridad \textit{TLS}, y la indexación de los eventos que se publiquen en tiempo real; como la configuración general que permite el funcionamiento integral de los servicios y módulos dispuestos en el sistema.
+
+Además, se dispone del motor \textit{Hasura}, el cual se encuentra conectado a una base de datos relacional (\textit{PostgreSQL}) basado en el lenguaje de consulta estructurado \textit{SQL}, que permite exponer una \textit{API GraphQL} a aquellos clientes que deseen obtener una visualización del modelo de datos propuesto en que se conjuga la información de cada formación ferroviar con su correspondiente dispositivo \textit{SAL/T} y diseño destinado al \textit{frontend}. Más aún, el enlace permite realizar modificaciones y hasta remociones de las columnas propuestas en el modelo.
+
 
 \subsection{Capa de visualizacion}
 
 En la capa de visualización se desarrollo una aplicación web utilizando el lenguaje
 de programación Typescript y el framework React.
+
+En esta capa, se ha utilizato el lenguaje de programación \textit{TypeScript} junto con la biblioteca gráfica \textit{React} para brindar una web reactiva en el que se elaboraron los formularios, las tablas y los paneles a partir de la explotación en de los datos almacenados en la base de datos. Cabe destacar que la plataforma web se encuentra condicionada por el rol y la entidad a la que pertenece cada usuario.  
+
 
 \section{Conclusiones}
 
