@@ -38,7 +38,7 @@
 % Example of a one line author/institution relationship
 %\author{\newauthor{John Marston} \newinstitution{Universidad Nacional Autónoma de México, Mexico City, Mexico}}
 
-\date{\today} % Add a date here if you would like one to appear underneath the title block, use \today for the current date, leave empty for no date
+% \date{\today} % Add a date here if you would like one to appear underneath the title block, use \today for the current date, leave empty for no date
 
 %----------------------------------------------------------------------------------------
 
@@ -52,9 +52,10 @@
 %	ABSTRACT
 %----------------------------------------------------------------------------------------
 
-\lettrineabstract{En el presente artículo se presentan los avances del desarrollo de una arquitectura modular para la Central Operativa SAL/T basado en el paradigma de Internet de las Cosas (IoT). Este proyecto es el complemento en materia de \textit{software} de un prototipo realizado para Trenes Argentinos, entidad que se ocupa de gestionar y operar la red ferroviaria de la Argentina.}
+\textit{\textbf{Resumen-}}   En el presente artículo se presentan los avances del desarrollo de una arquitectura modular para la Central Operativa \textit{SAL/T} basado en el paradigma de Internet de las Cosas (IoT). Este proyecto es el complemento en materia de \textit{software} de un prototipo realizado para Trenes Argentinos, entidad que se ocupa de gestionar y operar la red ferroviaria de la Argentina.
+\newline
 
-\lettrineabstract{Keywords: MQTT, JSON, ...}
+\textit{\textbf{Keywords-}}  MQTT, JSON, ...
 
 
 %----------------------------------------------------------------------------------------
@@ -84,6 +85,13 @@ En la sección III, según el \textit{stack} de una solución IoT, se presentan 
 
 En el marco del presente trabajo, la arquitectura esta estratificada en capas
 tal como se ilustra en la fiugra X. A continuación se describen cada una de ellas
+
+\begin{figure}[ht]
+\centering 
+\includegraphics[width=.5\textwidth]{diagram.png}
+\caption{Arquitectura de la Central Operativa SAL/T.}
+\label{fig:diagBloques}
+\end{figure}
 
 \subsection{Capa de dispositivos}
 
@@ -134,9 +142,6 @@ Entre los módulos desarrollados, se posibilita la visualización de los usuario
 
 En la actualidad, se encuentra en desarrollo propiciar al operario enviar comandos de control a los dispositivos activos que tenga asignados, brindar la connfiguración de los parámetros de cada dispositivo y de ser deseable su correspondiente modificación y finalmente, brindar la seguridad en las comunicaciones agregando la capa \textit{TLS} en el protocolo \textit{MQTT}. 
 
-
-
-This sentence requires citation \citep{Reference1}. This sentence requires multiple citations to imply that it is better supported \citep{Reference2,Reference3}. Finally, when conducting an appeal to authority, it can be useful to cite a reference in-text, much like \cite{Reference1} do quite a bit. Oh, and make sure to check out the bear in Figure \ref{bear}.
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
