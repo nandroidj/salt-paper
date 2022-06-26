@@ -1,7 +1,7 @@
 \documentclass[a4paper]{IEEEtran}
 \IEEEoverridecommandlockouts
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
-\usepackage{cite}
+\usepackage{}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
 \usepackage{graphicx}
@@ -56,9 +56,9 @@ MQTT, JSON, ...
 El sistema ferroviario de la República Argentina cuenta con una numerosa cantidad de formaciones ferroviarias en las que se ecuentran diferentes sistemas de seguridad a bordo. Estos equipos se encargan de supervisar el correcto funcionamiento de los subsistemas críticos. Ante una falla en uno de los subsistemas, una formación ferroviaria se detiene inmediatamente por la activación automática de las señales de corte de tracción (\textit{CT}) y frenado de emergencia (\textit{FE}). En esta situación, el conductor debe llevar la formación a un lugar seguro para que los pasajeros puedan descender y, posteriormente, trasladarla a un taller para que pueda ser reparada.
 \\
 
-El \textit{SAL/T} \cite{b1} \footnote{referencia al artículo de Di Vito}, según sus siglas, Sistema de Aislamiento Limitado o Total, es un sistema que le permite al maquinista de una formación ferroviaria la posibilidad de activar y desactivar el modo aislado limitado. En este modo, el equipo permite la circulación de la formación al desactivar las señales de corte de tracción y freno de emergencia generadas por los subsistemas críticos. Para que esta operación se realice de forma segura, se debe monitorear la velocidad de la formación tal que sea posible evitar que supere cierto valor máximo.\\
+El \textit{SAL/T} \cite{b1}, según sus siglas, Sistema de Aislamiento Limitado o Total, es un sistema que le permite al maquinista de una formación ferroviaria la posibilidad de activar y desactivar el modo aislado limitado. En este modo, el equipo permite la circulación de la formación al desactivar las señales de corte de tracción y freno de emergencia generadas por los subsistemas críticos. Para que esta operación se realice de forma segura, se debe monitorear la velocidad de la formación tal que sea posible evitar que supere cierto valor máximo.\\
 
-A partir del prototipo físico del SAL/T previamente mencionado, se presentan los avances en el desarrollo de una central operativa que centraliza los dispositivos SAL/T para su respectiva administación, configuración y monitoreo en tiempo real de la información recibida y transmitida desde una plataforma digital.
+A partir del prototipo físico del SAL/T previamente mencionado, se presentan los avances en el desarrollo de una central operativa que centraliza los dispositivos SAL/T para su respectiva administación, configuración y monitoreo en tiempo real de la información recibida y transmitida desde una plataforma digital. El proyecto se desarrolla por CONICET-GICSAFe \cite{b2} para la empresa Trenes Argentios \cite{b3}. 
 
 
 \section{Descripción de la problemática a resolver}
@@ -69,7 +69,7 @@ La central operativa permite la administación y configuración en forma remota 
 
 Como consecuencia de lo expresado previamente, se ha realizado el diseño de una arquitectura de \textit{software} versátil y confiable en términos de capacidad de procesamiento y de almacenamiento de la información.
 
-En la sección III, según el \textit{stack} \cite{b2} \footnote{agregar referencia} de una solución \textit{IoT}, se presentan cada una de las capas con sus respectivas tecnologías. Luego, en la sección IV se exponen las conclusiones y por último, en la sección V, se presentan los próximos pasos del trabajo.
+En la sección III, según el \textit{stack} \cite{b4} de una solución \textit{IoT}, se presentan cada una de las capas con sus respectivas tecnologías. Luego, en la sección IV se exponen las conclusiones y por último, en la sección V, se presentan los próximos pasos del trabajo.
 
 
 \section{Arquitectura propuesta}
@@ -87,32 +87,32 @@ tal como se ilustra en la fiugra 1. En las siguientes subsecciones se describen 
 
 \subsection{Capa de dispositivos}
 
-Sobre la base de un prototipo del Sistema de Aislamiento Limitado o Total, \textit{SAL/T}, se está desarrollando, en el kit de desarrollo \textit{Nucleo F429}, un cliente \textit{MQTT} que permite la publicación de la información proveniente de los subsistemas de falla, la velocidad de la información, entre otras variables; y llegado el caso, el dispositivo pueda realizar la lectura de diferentes parámetros configurables.
+Sobre la base de un prototipo del Sistema de Aislamiento Limitado o Total, \textit{SAL/T}, se está desarrollando, en el kit de desarrollo \textit{Nucleo F429} \cite{b5}, un cliente \textit{MQTT} \cite{b6} que permite la publicación de la información proveniente de los subsistemas de falla, la velocidad de la información, entre otras variables; y llegado el caso, el dispositivo pueda realizar la lectura de diferentes parámetros configurables.
 
 \subsection{Capa de conectividad}
 
-Para la comunicación entre los dispositivos \textit{SAL/T} y la capa de almacenamiento, se utiliza un \textit{Broker MQTT} \cite{b3} \footnote{agregar referencia} que oficia de orquestador entre el cliente, dispositivo \textit{SAL/T}, que publica los mensajes y aquel que se suscribe, el sistema \textit{Kafka} \cite{b4} \footnote{agregar referencia}, para la lectura de la información y su posterior procesamiento. 
+Para la comunicación entre los dispositivos \textit{SAL/T} y la capa de almacenamiento, se utiliza un \textit{Broker MQTT} que oficia de orquestador entre el cliente, el dispositivo \textit{SAL/T}, que publica los mensajes y aquel que se suscribe, el sistema \textit{Kafka} \cite{b7} \footnote{agregar referencia}, para la lectura de la información y su posterior procesamiento. 
 
-Dado que los mensajes intercambiados entre las partes contienen información sensible, se ha optado por agregar la capa de seguridad \textit{TLS} \cite{b5} \footnote{agregar referencia}. En este sentido, resulta indispensable utilizar el certificado \textit{X509} \cite{b6} \footnote{agregar referencia} para prevenir ataques del tipo \textit{adversary-in-the-middle} \cite{b7} \footnote{agregar referencia} y utilizar certificados emitidos por autoridades reconocidas.
+Dado que los mensajes intercambiados entre las partes contienen información sensible, se ha optado por agregar la capa de seguridad \textit{TLS} \cite{b8}. En este sentido, resulta indispensable utilizar el certificado \textit{X509} \cite{b9} para prevenir ataques del tipo \textit{adversary-in-the-middle} \cite{b10} y utilizar certificados emitidos por autoridades reconocidas.
 
 
 \subsection{Capa de almacenamiento}
 
 La capa de almacenamiento por un lado se encuentra constituida por el sistema distribuido \textit{Kafka} que se encarga de almacenar los datos de la aplicación. Entre ellos se destacan los mensajes MQTT enviados por los dispositivos SAL/T, como también la información referida a las formaciones y a los SAL/T que las ocupan. 
 
-Además, se tienen servicios de procesamiento de datos que se encargan de adaptar la información de los tópicos en datos que posteriormente serán consumidos por los servicios que integran la capa superior. Por otro lado, se tiene una base de datos \textit{SQL} \cite{b8} \footnote{agregar referencia} que se utiliza para almacenar los datos del servicio de autenticación y el motor que facilita la interacción con la plataforma web. Los conectores se encargan de insertar los datos que se quieran disponer a la capa de visualización.
+Además, se tienen servicios de procesamiento de datos que se encargan de adaptar la información de los tópicos en datos que posteriormente serán consumidos por los servicios que integran la capa superior. Por otro lado, se tiene una base de datos relacional \textit{PostgreSQL} \cite{b11} que se utiliza para almacenar los datos del servicio de autenticación y el motor que facilita la interacción con la plataforma web. Los conectores se encargan de insertar los datos que se quieran disponer a la capa de visualización.
 
 
 \subsection{Capa de interacción}
 
-La capa de interacción se encuentra conformada por tres unidades. Por un lado, se ha desarrollado en el lenguaje \textit{Kotlin} \cite{b9} \footnote{agregar referencia} en conjunto con el \textit{framework} \textit{Ktor} \cite{b10} \footnote{agregar referencia} un microservicio de autenticación donde es posible la gestión de los usuarios con sus respectivos roles y también el \textit{backend}. Entre sus tareas principales se encuentran las relacionadas al protocolo \textit{MQTT} para la actualización de los certificados que brindan seguridad a las comunicaciones, mediante el uso de la capa de seguridad \textit{TLS}, y la indexación de los eventos que se publiquen en tiempo real; como la configuración general que permite el funcionamiento integral de los servicios y módulos dispuestos en el sistema.
+La capa de interacción se encuentra conformada por tres unidades. Por un lado, se ha desarrollado en el lenguaje \textit{Kotlin} \cite{b12} en conjunto con el \textit{framework} \textit{Ktor} \cite{b13} un microservicio de autenticación donde es posible la gestión de los usuarios con sus respectivos roles y también el \textit{backend}. Entre sus tareas principales se encuentran las relacionadas al protocolo \textit{MQTT} para la actualización de los certificados que brindan seguridad a las comunicaciones, mediante el uso de la capa de seguridad \textit{TLS}, y la indexación de los eventos que se publiquen en tiempo real; como la configuración general que permite el funcionamiento integral de los servicios y módulos dispuestos en el sistema.
 
-Además, se dispone del motor \textit{Hasura} \cite{b11} \footnote{agregar referencia}, el cual se encuentra conectado a una base de datos relacional (\textit{PostgreSQL} \cite{b12} \footnote{agregar referencia}) basado en el lenguaje de consulta estructurado \textit{SQL}, que permite exponer una \textit{API GraphQL} \cite{b13} \footnote{agregar referencia} a aquellos clientes que deseen obtener una visualización del modelo de datos propuesto en que se conjuga la información de cada formación ferroviar con su correspondiente dispositivo \textit{SAL/T} y diseño destinado al \textit{frontend}. Más aún, el enlace permite realizar modificaciones y hasta remociones de las columnas propuestas en las tablas de cada esquema dentro de la base de datos.
+Además, se dispone del motor \textit{Hasura} \cite{b14}, el cual se encuentra conectado a una base de datos relacional (\textit{PostgreSQL}) basado en el lenguaje de consulta estructurado \textit{SQL} \cite{b15} , que permite exponer una \textit{API GraphQL} \cite{b16} a aquellos clientes que deseen obtener una visualización del modelo de datos propuesto en que se conjuga la información de cada formación ferroviaria con su correspondiente dispositivo \textit{SAL/T} y diseño destinado al \textit{frontend}. Más aún, el enlace permite realizar modificaciones y hasta remociones de las columnas propuestas en las tablas de cada esquema dentro de la base de datos.
 
 
 \subsection{Capa de visualizacion}
 
-En esta capa, se ha utilizato el lenguaje de programación \textit{TypeScript} \cite{b14} \footnote{agregar referencia} junto con la biblioteca gráfica \textit{React} \cite{b15} \footnote{agregar referencia} para brindar una web reactiva en el que se elaboraron los formularios, las tablas y los paneles a partir de la explotación en de los datos almacenados en la base de datos. Cabe destacar que la plataforma web se encuentra condicionada por el rol y la entidad a la que pertenece cada usuario.
+En esta capa, se ha utilizato el lenguaje de programación \textit{TypeScript} \cite{b17} junto con la biblioteca gráfica \textit{React} \cite{b18} para brindar una web reactiva en el que se elaboraron los formularios, las tablas y los paneles a partir de la explotación en de los datos almacenados en la base de datos. Cabe destacar que la plataforma web se encuentra condicionada por el rol y la entidad a la que pertenece cada usuario.
 
 
 AGREGAR IMAGEN/ES DE LA PLATAFORMA
@@ -133,29 +133,63 @@ En la actualidad, se encuentra en desarrollo propiciar al operario enviar comand
 
 \begin{thebibliography}{00}
 
-\bibitem{b1} Tracking by detection, OpenCV, https://opencv.org/multiple-object-tracking-in-realtime/
-\bibitem{b2} Object detection and Tracking, NVIDIA, https://www.nvidia.com/en-us/on-demand/session/gtcwashingtondc2018-dc8127/
-\bibitem{b3} Retail Analytics, Intel,\newline https://www.intel.com/content/www/us/en/retail/analytics/overview.html
-\bibitem{b4} Object Detection, Amazon,\newline https://docs.aws.amazon.com/sagemaker/latest/dg/object-detection.html
-\bibitem{b5} Track objects, GCP, https://cloud.google.com/video-intelligence/docs/object-tracking?hl=es-419
-\bibitem{b6} Jason Brownlee. What is computer vision?, machinelearningmastery.
-\bibitem{b7} Jason Brownlee. What is Deep Learning?, machinelearningmastery.com
-\bibitem{b8} Object Detection, Tensorflow,\newline https://www.tensorflow.org/lite/examples/object\%5Fdetection/overview
-\bibitem{b9} Bounding box, OpenCV,https://www.delftstack.com/howto/python/opencv-bounding-box/
-\bibitem{b10} Joseph Redmon y Ali Farhadi. YOLO: AN Incremental Improvement.
-\bibitem{b11} Object Tracking, VISO AI, https://viso.ai/deep-learning/object-tracking/
-\bibitem{b12} Dietrich Paulus Nicolai Wojke Alex Bewley. DeepSORT, Mar. 2020.
-\bibitem{b13} Yongxin Yang Kaiyang Zhou. Omni-Scale Feature Learning for Person, Re-Identification. Dic. 2019.
-\bibitem{b14} Active Control of Camera Parameters for Object Detection Algorithms, Yulong Wu, John Tsotsos, https://arxiv.org/pdf/1705.05685.pdf
-\bibitem{b15} Scikit learn, scikit-learn.org, metrics, pairwise cosine similarity.
-\bibitem{b16} Análisis Cluster, Universidad de Valencia, https://www.uv.es/ceaces/multivari/cluster/CLUSTER2.htm
-\bibitem{b17} Electronic Arts. Los Sims 3.
-\bibitem{b18} NVIDIA SDK, https://developer.nvidia.com/nvidia-sdk-manager
-\bibitem{b19} NVIDIA Jetson, https://www.nvidia.com/es-la/autonomous-machines/embedded-systems/
-\bibitem{b20} Frame Rate Matters for Embedded, Ashton Fagg, https://eprints.qut.edu.au/117072/1/Ashton\%5FFagg\%5FThesis.pdf
-\bibitem{b21} Using Quantization with NVIDIA, NVIDIA Developer, https://developer.nvidia.com/blog/achieving-fp32-accuracy-for-int8-inference-using-quantization-aware-training-with-tensorrt/
-\bibitem{b22} Globant S.A, https://www.globant.com/es/about
+\bibitem{b1} 'Sistema de supervisión de la seguridad del material
+ferroviario utilizando patrones de diseño', Ivan Mariano Di Vito, Pablo Gomez, Ariel Lutenberg, Libro de trabajos del CASE2019, Congreso Argetino de Sistemas Embebidos, Santa Fe, Argentina. (2019).
+
+\bibitem{b2} CONICET-GICSAFe (2022). [Online]. Disponible: \\
+https://sites.google.com/view/conicet-gicsafe/inicio
+
+\bibitem{b3} Trenes Argentinos (2022). [Online]. Disponible: \\
+https://www.argentina.gob.ar/transporte/trenes 
+
+\bibitem{b4} Introducción general a IoT (2022). [Online]. Disponible: \\
+https://www.gotoiot.com/pages/articles/iot\_intro/index.html 
+
+\bibitem{b5} NUCLEO-F429ZI (2022). [Online]. Disponible: \\
+https://www.st.com/en/evaluation-tools/nucleo-f429zi.html
+
+\bibitem{b6} MQTT (2022). [Online]. Disponible: https://mqtt.org/ 
+
+\bibitem{b7} Kafka (2022). [Online]. Disponible: https://kafka.apache.org/  
+
+\bibitem{b8} 'TLS/SSL - MQTT Security Fundamentals' (2022). [Online]. \\
+Disponible: https://www.hivemq.com/blog/mqtt-security-fundamentals-tls-ssl/ 
+
+\bibitem{b9} X509 (2022). [Online]. Disponible: \\
+https://www.ssl.com/faqs/what-is-an-x-509-certificate/ 
+
+\bibitem{b10} Adversary-in-the-Middle (2022). [Online]. Disponible: \\
+https://attack.mitre.org/techniques/T1557/
+
+\bibitem{b11} PostgreSQL (2022). [Online]. Disponible: https://www.postgresql.org/
+
+\bibitem{b12} Kotlin (2022). [Online]. Disponible: https://kotlinlang.org/
+
+\bibitem{b13} Ktor (2022). [Online]. Disponible: https://ktor.io/ 
+
+\bibitem{b14} Hasura (2022). [Online]. Disponible: https://hasura.io/
+
+\bibitem{b15} SQL (2022). [Online]. Disponible: https://www.w3schools.com/sql/
+
+\bibitem{b16} API GraphQL (2022). [Online]. Disponible: https://graphql.org/
+
+\bibitem{b17} TypeScript (2022). [Online]. Disponible: https://www.typescriptlang.org/
+
+\bibitem{b18} React (2022). [Online]. Disponible: https://reactjs.org/
+
 
 \end{thebibliography}
 
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
