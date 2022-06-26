@@ -7,8 +7,13 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage[font=normalsize,labelfont=bf]{caption}
+
+
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+
 \begin{document}
 
 
@@ -36,9 +41,7 @@ Dr. Ariel Lutenberg*\textsuperscript{2} \\
 
 \begin{abstract}
 
-En el presente artículo se presentan los avances del desarrollo de una arquitectura modular para la Central Operativa \textit{SAL/T} basado en el paradigma de Internet de las Cosas (IoT). Este proyecto es el complemento en materia de \textit{software} de un prototipo realizado para Trenes Argentinos, entidad que se ocupa de operar la red ferroviaria de la Argentina.
-
-En las formaciones ferroviarias se encuentran diversos sistemas de seguridad que ante la alteración de sus condiciones normales activan el corte por tracción y utilizan el freno de emergencia, forzando de esta manera dejar el coche a la deriva. En este trabajo, se presenta el desarrollo de una arquitectura modular basado en el paradigma de Internet de las Cosas (IoT) que permita visualizar los sistemas y los parámetros mencionados. En particular, se parte desde la capa de conectividad hasta la capa de aplicación donde a través de una págia web es posible realizar el monitoreo de los d
+En las formaciones ferroviarias se encuentran diversos sistemas de seguridad que ante la alteración de sus condiciones normales se activan el corte por tracción y el freno de emergencia, forzando a dejar el coche a la deriva. En este trabajo, se presenta el desarrollo de una arquitectura modular basada en el paradigma de Internet de las Cosas (IoT) para Trenes Argentinos, entidad que se ocupa de operar la red ferroviaria de la Argentina, que permite visualizar los parámetros mencionados como así también los sistemas de seguridad, entre otros.
 
 
 \end{abstract}
@@ -50,12 +53,12 @@ MQTT, JSON, ...
 
 \section{Motivación y Contexto}
 
-Las formaciones ferroviarias cuentan con diferentes sistemas de seguridad a bordo. Estos equipos se encargan de supervisar el correcto funcionamiento de los subsistemas críticos. Ante una falla en uno de los subsistemas, una formación ferroviaria se detiene inmediatamente por la activación automática de las señales de corte de tracción (\textit{CT}) y frenado de emergencia (\textit{FE}). En esta situación, el conductor debe llevar la formación a un lugar seguro para que los pasajeros puedan descender y, posteriormente, trasladarla a un taller para que pueda ser reparada.
+El sistema ferroviario de la República Argentina cuenta con una numerosa cantidad de formaciones ferroviarias en las que se ecuentran diferentes sistemas de seguridad a bordo. Estos equipos se encargan de supervisar el correcto funcionamiento de los subsistemas críticos. Ante una falla en uno de los subsistemas, una formación ferroviaria se detiene inmediatamente por la activación automática de las señales de corte de tracción (\textit{CT}) y frenado de emergencia (\textit{FE}). En esta situación, el conductor debe llevar la formación a un lugar seguro para que los pasajeros puedan descender y, posteriormente, trasladarla a un taller para que pueda ser reparada.
 \\
 
 El \textit{SAL/T} \cite{b1} \footnote{referencia al artículo de Di Vito}, según sus siglas, Sistema de Aislamiento Limitado o Total, es un sistema que le permite al maquinista de una formación ferroviaria la posibilidad de activar y desactivar el modo aislado limitado. En este modo, el equipo permite la circulación de la formación al desactivar las señales de corte de tracción y freno de emergencia generadas por los subsistemas críticos. Para que esta operación se realice de forma segura, se debe monitorear la velocidad de la formación tal que sea posible evitar que supere cierto valor máximo.\\
 
-A partir del prototipo físico del SAL/T previamente mencionado, se presentan los avances en el desarrollo de una central operativa conformando una solución integral que posibilita la administación, la configuración y el monitoreo en tiempo real de la información recibida y transmitida por parte de cada dispositivo SAL/T desde una plataforma digital.
+A partir del prototipo físico del SAL/T previamente mencionado, se presentan los avances en el desarrollo de una central operativa que centraliza los dispositivos SAL/T para su respectiva administación, configuración y monitoreo en tiempo real de la información recibida y transmitida desde una plataforma digital.
 
 
 \section{Descripción de la problemática a resolver}
@@ -64,20 +67,20 @@ Los subsistemas asociados al SAL/T como la seguridad de puertas, el sistema de h
 
 La central operativa permite la administación y configuración en forma remota de los dispositivos de supervisión de seguridad de cada formación ferroviaria, la visualización de los diferentes parámetros de interés involucrados tal que se encuentre al alcance de una o más personas asignadas dentro de una entidad y de este modo, sea posible optimizar la toma de decisiones.
 
-Como consecuencia de lo expresado previamente, se ha realizado el diseño de una arquitectura versátil y confiable en términos de capacidad de procesamiento y de almacenamiento de la información.
+Como consecuencia de lo expresado previamente, se ha realizado el diseño de una arquitectura de \textit{software} versátil y confiable en términos de capacidad de procesamiento y de almacenamiento de la información.
 
-En la sección III, según el \textit{stack} \cite{b2} \footnote{agregar referencia} de una solución IoT, se presentan cada una de las tecnologías utilizadas. Luego, en la sección IV se exponen las conclusiones y por último, en la sección V, se presentan los próximos pasos del trabajo.
+En la sección III, según el \textit{stack} \cite{b2} \footnote{agregar referencia} de una solución \textit{IoT}, se presentan cada una de las capas con sus respectivas tecnologías. Luego, en la sección IV se exponen las conclusiones y por último, en la sección V, se presentan los próximos pasos del trabajo.
 
 
 \section{Arquitectura propuesta}
 
 En el marco del presente trabajo, la arquitectura esta estratificada en capas
-tal como se ilustra en la fiugra X. En las siguientes subsecciones se describen cada una de estas capas.
+tal como se ilustra en la fiugra 1. En las siguientes subsecciones se describen cada una de estas capas.
 
 \begin{figure}[ht]
 \centering 
 \includegraphics[width=.5\textwidth]{diagram.png}
-\caption{ \normalsize Arquitectura de la Central Operativa SAL/T.}
+\caption{Arquitectura de la Central Operativa SAL/T.}
 \label{fig:diagBloques}
 \end{figure}
 
