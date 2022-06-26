@@ -102,6 +102,26 @@ La capa de almacenamiento por un lado se encuentra constituida por el sistema di
 
 Además, se tienen servicios de procesamiento de datos que se encargan de adaptar la información de los tópicos en datos que posteriormente serán consumidos por los servicios que integran la capa superior. Por otro lado, se tiene una base de datos relacional \textit{PostgreSQL} \cite{b11} que se utiliza para almacenar los datos del servicio de autenticación y el motor que facilita la interacción con la plataforma web. Los conectores se encargan de insertar los datos que se quieran disponer a la capa de visualización.
 
+\begin{figure}[ht]
+\centering 
+\includegraphics[width=.5\textwidth]{images/hasura.png}
+\caption{Modelo de datos de los dispositivos, trenes y entidades}
+\label{fig:devicesTrainEntity}
+\end{figure}
+
+\begin{figure}[ht]
+\centering 
+\includegraphics[width=.5\textwidth]{images/fail_system_2.png}
+\caption{Modelo de datos de los dispositivos y sus subsistemas de fallas}
+\label{fig:devicesSubsystems}
+\end{figure}
+
+En la figura \ref{fig:devicesTrainEntity} se observa el modelo de datos que representa a los dispositivos SAL/T, las formaciones y las entidades. 
+El primero cuenta con un identificador del dispositivo en el sistema, el estado de operación y una referencia al tren en el que se desplegó el artefacto. 
+El modelo de la formación está enriquecido con la entidad a la que pertenece y el numero de serie del tren. 
+Por último, las entidades están compuestas por nombre y descripción.
+Luego, en la imagen \ref{fig:devicesTrainEntity} se aprecian los subsistemas de fallas relacionados con el dispositivo SAL/T.
+Su modelo esta integrado con el nombre del subsistema, el id del dispositivo al que está asociado y el estado actual del mismo. 
 
 \subsection{Capa de interacción}
 
@@ -112,11 +132,18 @@ Además, se dispone del motor \textit{Hasura} \cite{b14}, el cual se encuentra c
 
 \subsection{Capa de visualizacion}
 
-En esta capa, se ha utilizato el lenguaje de programación \textit{TypeScript} \cite{b17} junto con la biblioteca gráfica \textit{React} \cite{b18} para brindar una web reactiva en el que se elaboraron los formularios, las tablas y los paneles a partir de la explotación en de los datos almacenados en la base de datos. Cabe destacar que la plataforma web se encuentra condicionada por el rol y la entidad a la que pertenece cada usuario.
+En esta capa, se ha utilizato el lenguaje de programación \textit{TypeScript} \cite{b17} junto con la biblioteca gráfica \textit{React} \cite{b18} para brindar una web reactiva en el que se elaboraron los formularios, las tablas y los paneles a partir de la explotación en de los datos almacenados en la base de datos. Cabe destacar que la plataforma web se encuentra condicionada por el rol y la entidad ferroviaria a la que pertenece cada usuario.
 
+En la figura \ref{fig:dashboard} se puede apreciar el dashboard de la central operativa al que tendrán acceso los operadores de cada entidad.
+En el mismo se observan distintas tarjetas con el estado de cada subsistema de fallas y del tren, como así también un velocímetro que
+informa la velocidad de la formación.
 
-AGREGAR IMAGEN/ES DE LA PLATAFORMA
-
+\begin{figure}[ht]
+\centering 
+\includegraphics[width=.47\textwidth]{images/cental.png}
+\caption{Panel de control de la central operativa}
+\label{fig:dashboard}
+\end{figure}
 
 \section{Conclusiones}
 
