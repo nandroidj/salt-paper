@@ -80,7 +80,7 @@ tal como se ilustra en la fiugra 1. En las siguientes subsecciones se describen 
 
 \begin{figure}[ht]
 \centering 
-\includegraphics[width=.5\textwidth]{diagram.png}
+\includegraphics[width=.48\textwidth]{images/salt-iot-stack.png}
 \caption{Arquitectura de la Central Operativa SAL/T.}
 \label{fig:diagBloques}
 \end{figure}
@@ -106,14 +106,14 @@ Además, se tienen servicios de procesamiento de datos que se encargan de adapta
 \begin{figure}[ht]
 \centering 
 \includegraphics[width=.5\textwidth]{images/hasura.png}
-\caption{Modelo de datos de los dispositivos, trenes y entidades}
+\caption{Modelo de datos de los dispositivos, trenes y entidades.}
 \label{fig:devicesTrainEntity}
 \end{figure}
 
 \begin{figure}[ht]
 \centering 
 \includegraphics[width=.5\textwidth]{images/fail_system_2.png}
-\caption{Modelo de datos de los dispositivos y sus subsistemas de fallas}
+\caption{Modelo de datos de los dispositivos y sus subsistemas de fallas.}
 \label{fig:devicesSubsystems}
 \end{figure}
 
@@ -131,7 +131,7 @@ La capa de interacción se encuentra conformada por tres unidades. Por un lado, 
 Además, se dispone del motor \textit{Hasura} \cite{b14}, el cual se encuentra conectado a una base de datos relacional (\textit{PostgreSQL}) basado en el lenguaje de consulta estructurado \textit{SQL} \cite{b15} , que permite exponer una \textit{API GraphQL} \cite{b16} a aquellos clientes que deseen obtener una visualización del modelo de datos propuesto en que se conjuga la información de cada formación ferroviaria con su correspondiente dispositivo \textit{SAL/T} y diseño destinado al \textit{frontend}. Más aún, el enlace permite realizar modificaciones y hasta remociones de las columnas propuestas en las tablas de cada esquema dentro de la base de datos.
 
 
-\subsection{Capa de visualizacion}
+\subsection{Capa de visualización}
 
 En esta capa, se ha utilizato el lenguaje de programación \textit{TypeScript} \cite{b17} junto con la biblioteca gráfica \textit{React} \cite{b18} para brindar una web reactiva en el que se elaboraron los formularios, las tablas y los paneles a partir de la explotación en de los datos almacenados en la base de datos. Cabe destacar que la plataforma web se encuentra condicionada por el rol y la entidad ferroviaria a la que pertenece cada usuario.
 
@@ -142,7 +142,7 @@ informa la velocidad de la formación.
 \begin{figure}[ht]
 \centering 
 \includegraphics[width=.47\textwidth]{images/cental.png}
-\caption{Panel de control de la central operativa}
+\caption{Panel de control de la central operativa.}
 \label{fig:dashboard}
 \end{figure}
 
