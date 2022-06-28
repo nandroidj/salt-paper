@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1656278667 "salt-central-operations.tex" "build/salt-central-operations.pdf" "salt-central-operations" 1656278668
+["pdflatex"] 1656387912 "salt-central-operations.tex" "build/salt-central-operations.pdf" "salt-central-operations" 1656387914
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -59,12 +59,12 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1653695412 2826438 134a857711832e53146a4a8acb740aa3 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "IEEEtran.cls" 1656278284 281968 219552b1eea55bb6e651bda6184fa6b9 ""
-  "build/salt-central-operations.aux" 1656278668 2623 19658babf6c2838a5562e2fef02a63af "pdflatex"
+  "build/salt-central-operations.aux" 1656387914 2623 bf588e07267cd23227732b032c1c2603 "pdflatex"
   "images/cental.png" 1656278284 78078 2cafac4ba2b58c883c1e094973219d1c ""
-  "images/fail_system_2.png" 1656278284 66857 5dd085e9de05ade4be64d0a24cda9192 ""
-  "images/hasura.png" 1656278284 63499 8530e499f3719aee5f6c3a0b9ed1fd84 ""
-  "images/salt-iot-stack.png" 1656278403 742211 f39fde970a9f5eddf48bb57b20aa4b64 ""
-  "salt-central-operations.tex" 1656278664 13908 a4fec060c9021b56f39f804761f84c73 ""
+  "images/fail_system_v2.1.jpg" 1656387678 2545382 8a5069649c9aa0ab9e9c316b8ecdc3e7 ""
+  "images/iot-stack-v2.1.png" 1656387626 425700 0157dd926ab97c4a93be5e0c2fda5616 ""
+  "images/salt_table_v2.1.jpg" 1656387662 2275695 ac53c273ee8200ae53d12a25cebde70f ""
+  "salt-central-operations.tex" 1656387910 13888 a10717bc82bf89769990e0cbcbface2b ""
   (generated)
   "build/salt-central-operations.aux"
   "build/salt-central-operations.log"

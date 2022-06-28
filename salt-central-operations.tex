@@ -17,7 +17,7 @@
 \begin{document}
 
 % Opcion 1
-\title{Diseño e implementacion de una central operativa para el control y monitoreo del material rodante}
+\title{Diseño e implementación de una central operativa para el control y monitoreo del material rodante}
 
 % Opcion 2
 % \title{Opcion 2 - Central de monitoreo para sistemas de seguridad en formaciones ferroviarias \\}
@@ -42,31 +42,31 @@ Laboratorio de Sistemas Embebidos \\
 
 \begin{abstract}
 \\
-En las formaciones ferroviarias se encuentran diversos sistemas de seguridad que ante la alteración de sus condiciones normales se activan el corte por tracción y el freno de emergencia, forzando a dejar el coche a la deriva. En este trabajo, se presenta el desarrollo de una arquitectura modular basada en el paradigma de Internet de las Cosas (IoT) para Trenes Argentinos, entidad que se ocupa de operar la red ferroviaria de la Argentina, que permite visualizar los parámetros mencionados como así también los sistemas de seguridad, entre otros.
+Ante la falla de sistemas tales como el control de puertas o la cámara frontal de registro de accidentes viales las formaciones ferroviarias activan automáticamente el corte de traccion y el freno de emergencia. En esas circunstancias la formación queda detenida y los pasajeros deben descender a las vías si la detención no se produce en una estación ferroviaria. En este trabajo se presenta el desarrollo para Trenes Argentinos de una arquitectura modular basada en el paradigma de Internet de las Cosas (IoT) que permite visualizar y gestionar los sistemas involucrados en esas situaciones.
 \end{abstract}
 
 
 \begin{IEEEkeywords}
 \\
-Sistemas ferroviarios, MQTT/TLS, Nucleo F429, Kafka, Hasura, Kotlin, TypeScript, React
+Sistemas ferroviarios, MQTT/TLS, TypeScript, Apache Kafka
 \end{IEEEkeywords}
 
 
 \section{Motivación y Contexto}
 
-El sistema ferroviario de la República Argentina cuenta con una numerosa cantidad de formaciones ferroviarias en las que se ecuentran diferentes sistemas de seguridad a bordo. Estos equipos se encargan de supervisar el correcto funcionamiento de los subsistemas críticos. Ante una falla en uno de los subsistemas, una formación ferroviaria se detiene inmediatamente por la activación automática de las señales de corte de tracción (\textit{CT}) y frenado de emergencia (\textit{FE}). En esta situación, el conductor debe llevar la formación a un lugar seguro para que los pasajeros puedan descender y, posteriormente, trasladarla a un taller para que pueda ser reparada.
+El sistema ferroviario de la República Argentina cuenta con una gran cantidad de formaciones ferroviarias en las que se ecuentran diferentes sistemas de seguridad a bordo. Estos equipos se encargan de supervisar el correcto funcionamiento de los subsistemas críticos. Ante una falla en uno de los subsistemas, una formación ferroviaria se detiene inmediatamente por la activación automática de las señales de corte de tracción (\textit{CT}) y frenado de emergencia (\textit{FE}). En esta situación el conductor debe llevar la formación a un lugar seguro para que los pasajeros puedan descender y, posteriormente, trasladarla a un taller para que pueda ser reparada.
 \\
 
 El \textit{SAL/T} \cite{b1}, según sus siglas, Sistema de Aislamiento Limitado o Total, es un sistema que le permite al maquinista de una formación ferroviaria la posibilidad de activar y desactivar el modo aislado limitado. En este modo, el equipo permite la circulación de la formación al desactivar las señales de corte de tracción y freno de emergencia generadas por los subsistemas críticos. Para que esta operación se realice de forma segura, se debe monitorear la velocidad de la formación tal que sea posible evitar que supere cierto valor máximo.\\
 
-A partir del prototipo físico del SAL/T previamente mencionado, se presentan los avances en el desarrollo de una central operativa que centraliza los dispositivos SAL/T para su respectiva administación, configuración y monitoreo en tiempo real de la información recibida y transmitida desde una plataforma digital. El proyecto se desarrolla por CONICET-GICSAFe \cite{b2} para la empresa Trenes Argentios \cite{b3}. 
+A partir del prototipo físico del SAL/T previamente mencionado, se presentan los avances en el desarrollo de una central operativa que centraliza los dispositivos SAL/T para su respectiva administación, configuración y monitoreo en tiempo real de la información recibida y transmitida desde una plataforma digital. El proyecto se desarrolla por CONICET-GICSAFe \cite{b2} para la empresa Trenes Argentinos \cite{b3}. 
 
 
 \section{Descripción de la problemática a resolver}
 
-Los subsistemas asociados al SAL/T como la seguridad de puertas, el sistema de hombre vivo y la protección de coche a la deriva; son críticos debido a que, en caso de fallar, pueden ocasionar lesiones o muertes de personas e incluso generar pérdidas materiales. \\ 
+Los subsistemas asociados al SAL/T, como la seguridad de puertas, el sistema de hombre vivo y la protección de coche a la deriva, son críticos debido a que, en caso de fallar, pueden ocasionar lesiones o muertes de personas e incluso generar pérdidas materiales. \\ 
 
-La central operativa permite la administación y configuración en forma remota de los dispositivos de supervisión de seguridad de cada formación ferroviaria, la visualización de los diferentes parámetros de interés involucrados tal que se encuentre al alcance de una o más personas asignadas dentro de una entidad y de este modo, sea posible optimizar la toma de decisiones. \\
+La central operativa permite la administación y configuración en forma remota de los dispositivos de supervisión de seguridad de cada formación ferroviaria, la visualización de los diferentes parámetros de interés involucrados por las personas asignadas dentro de una entidad y de este modo, sea posible optimizar la toma de decisiones. \\
 
 Como consecuencia de lo expresado previamente, se ha realizado el diseño de una arquitectura de \textit{software} versátil y confiable en términos de capacidad de procesamiento y de almacenamiento de la información. \\
 
@@ -80,7 +80,7 @@ tal como se ilustra en la fiugra 1. En las siguientes subsecciones se describen 
 
 \begin{figure}[ht]
 \centering 
-\includegraphics[width=.48\textwidth]{images/salt-iot-stack.png}
+\includegraphics[width=.48\textwidth]{images/iot-stack-v2.1.png}
 \caption{Arquitectura de la Central Operativa SAL/T.}
 \label{fig:diagBloques}
 \end{figure}
@@ -88,7 +88,7 @@ tal como se ilustra en la fiugra 1. En las siguientes subsecciones se describen 
 
 \subsection{Capa de dispositivos}
 
-Sobre la base de un prototipo del Sistema de Aislamiento Limitado o Total, \textit{SAL/T}, se está desarrollando, en el kit de desarrollo \textit{Nucleo F429} \cite{b5}, un cliente \textit{MQTT} \cite{b6} que permite la publicación de la información proveniente de los subsistemas de falla, la velocidad de la información, entre otras variables; y llegado el caso, el dispositivo pueda realizar la lectura de diferentes parámetros configurables.
+Sobre la base de un prototipo del Sistema de Aislamiento Limitado o Total, \textit{SAL/T}, se desarolló, en el kit de desarrollo \textit{Nucleo F429} \cite{b5}, un cliente \textit{MQTT} \cite{b6} que permite la publicación de la información proveniente de los subsistemas de falla, la velocidad de la información, entre otras variables; y llegado el caso, el dispositivo pueda realizar la lectura de diferentes parámetros configurables.
 
 \subsection{Capa de conectividad}
 
@@ -105,14 +105,14 @@ Además, se tienen servicios de procesamiento de datos que se encargan de adapta
 
 \begin{figure}[ht]
 \centering 
-\includegraphics[width=.5\textwidth]{images/hasura.png}
+\includegraphics[width=.5\textwidth]{images/salt_table_v2.1.jpg}
 \caption{Modelo de datos de los dispositivos, trenes y entidades.}
 \label{fig:devicesTrainEntity}
 \end{figure}
 
 \begin{figure}[ht]
 \centering 
-\includegraphics[width=.5\textwidth]{images/fail_system_2.png}
+\includegraphics[width=.5\textwidth]{images/fail_system_v2.1.jpg}
 \caption{Modelo de datos de los dispositivos y sus subsistemas de fallas.}
 \label{fig:devicesSubsystems}
 \end{figure}

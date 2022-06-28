@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.27)  26 JUN 2022 18:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.27)  28 JUN 2022 00:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -288,6 +288,11 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Underfull \hbox (badness 3019) in paragraph at lines 57--59
+\OT1/ptm/m/n/10 con una gran can-ti-dad de for-ma-ciones fer-roviarias en
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
@@ -332,11 +337,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
-<images/salt-iot-stack.png, id=1, 796.9775pt x 406.51875pt>
-File: images/salt-iot-stack.png Graphic file (type png)
-<use images/salt-iot-stack.png>
-Package pdftex.def Info: images/salt-iot-stack.png  used on input line 83.
-(pdftex.def)             Requested size: 247.6778pt x 126.32965pt.
+<images/iot-stack-v2.1.png, id=1, 1816.7875pt x 1606.0pt>
+File: images/iot-stack-v2.1.png Graphic file (type png)
+<use images/iot-stack-v2.1.png>
+Package pdftex.def Info: images/iot-stack-v2.1.png  used on input line 83.
+(pdftex.def)             Requested size: 247.6778pt x 218.93263pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
@@ -350,21 +355,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
-<images/hasura.png, id=12, 1223.57124pt x 692.5875pt>
-File: images/hasura.png Graphic file (type png)
-<use images/hasura.png>
-Package pdftex.def Info: images/hasura.png  used on input line 108.
-(pdftex.def)             Requested size: 258.0pt x 146.0289pt.
+<images/salt_table_v2.1.jpg, id=12, 4232.81375pt x 1748.5325pt>
+File: images/salt_table_v2.1.jpg Graphic file (type jpg)
+<use images/salt_table_v2.1.jpg>
+Package pdftex.def Info: images/salt_table_v2.1.jpg  used on input line 108.
+(pdftex.def)             Requested size: 258.0pt x 106.5616pt.
 
 Overfull \hbox (6.0pt too wide) in paragraph at lines 108--109
  [][] 
  []
 
-<images/fail_system_2.png, id=13, 1297.84875pt x 412.54124pt>
-File: images/fail_system_2.png Graphic file (type png)
-<use images/fail_system_2.png>
-Package pdftex.def Info: images/fail_system_2.png  used on input line 115.
-(pdftex.def)             Requested size: 258.0pt x 82.00319pt.
+<images/fail_system_v2.1.jpg, id=13, 4232.81375pt x 1293.83376pt>
+File: images/fail_system_v2.1.jpg Graphic file (type jpg)
+<use images/fail_system_v2.1.jpg>
+Package pdftex.def Info: images/fail_system_v2.1.jpg  used on input line 115.
+(pdftex.def)             Requested size: 258.0pt x 78.8507pt.
 
 Overfull \hbox (6.0pt too wide) in paragraph at lines 115--116
  [][] 
@@ -375,7 +380,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
-[2 <./images/salt-iot-stack.png> <./images/hasura.png> <./images/fail_system_2.png>]
+[2 <./images/iot-stack-v2.1.png> <./images/salt_table_v2.1.jpg> <./images/fail_system_v2.1.jpg>]
 <images/cental.png, id=18, 1288.815pt x 653.44125pt>
 File: images/cental.png Graphic file (type png)
 <use images/cental.png>
@@ -408,15 +413,15 @@ Underfull \hbox (badness 2027) in paragraph at lines 181--183
 
 [3 <./images/cental.png>] (build/salt-central-operations.aux) ) 
 Here is how much of TeX's memory you used:
- 5379 strings out of 478268
- 89222 string characters out of 5846347
+ 5380 strings out of 478268
+ 89310 string characters out of 5846347
  395525 words of memory out of 5000000
  23555 multiletter control sequences out of 15000+600000
  503588 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,7n,63p,810b,324s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on build/salt-central-operations.pdf (3 pages, 266104 bytes).
+Output written on build/salt-central-operations.pdf (3 pages, 5403303 bytes).
 PDF statistics:
  42 PDF objects out of 1000 (max. 8388607)
  22 compressed objects within 1 object stream
