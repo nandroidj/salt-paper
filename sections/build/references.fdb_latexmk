@@ -1,0 +1,10 @@
+# Fdb version 3
+["pdflatex"] 1656802769 "references.tex" "build/references.pdf" "references" 1656802769
+  "/usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf" 1646502317 40171 cdab547de63d26590bebb3baff566530 ""
+  "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1653695412 2826438 134a857711832e53146a4a8acb740aa3 ""
+  "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
+  "build/references.aux" 1656802597 32 3985256e7290058c681f74d7a3565a19 ""
+  "references.tex" 1656802613 1943 2644775cfe99a73ac7c8e026fb8b2a99 ""
+  (generated)
+  "build/references.log"
+  "build/references.pdf"

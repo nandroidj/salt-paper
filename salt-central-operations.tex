@@ -8,7 +8,7 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage[font=normalsize,labelfont=bf]{caption}
-
+\usepackage{balance}
 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
@@ -17,10 +17,7 @@
 \begin{document}
 
 % Opcion 1
-\title{Diseño e implementación de una central operativa para el control y monitoreo del material rodante}
-
-% Opcion 2
-% \title{Opcion 2 - Central de monitoreo para sistemas de seguridad en formaciones ferroviarias \\}
+\title{Diseño e implementación de una central operativa para el control y monitoreo en el material rodante}
 
 
 \author{
@@ -40,120 +37,20 @@ xxxxxxxxxxx xx xxxxxxxx xxxxxxxxx \\
 
 \maketitle
 
-\begin{abstract}
-\\
-Ante la falla de sistemas tales como el control de puertas o la cámara frontal de registro de accidentes viales las formaciones ferroviarias activan automáticamente el corte de tracción y el freno de emergencia. En esas circunstancias la formación queda detenida y los pasajeros deben descender a las vías si la detención no se produce en una estación ferroviaria. En este trabajo se presenta el desarrollo para Trenes Argentinos de una arquitectura modular basada en el paradigma de Internet de las Cosas (IoT) que permite visualizar y gestionar los sistemas involucrados en esas situaciones.
-\end{abstract}
+\input{sections/abstract_keywords}
+
+\input{sections/motivation_context}
+
+\input{sections/problematic}
+
+\input{sections/proposed_architecture}
+
+\input{sections/conclusions}
+
+% \input{sections/references}
 
 
-\begin{IEEEkeywords}
-\\
-Sistemas ferroviarios, MQTT/TLS, TypeScript, Apache Kafka
-\end{IEEEkeywords}
-
-
-\section{Motivación y Contexto}
-
-El sistema ferroviario de la República Argentina cuenta con una gran cantidad de formaciones ferroviarias en las que se encuentran diferentes sistemas de seguridad a bordo. Estos equipos se encargan de supervisar el correcto funcionamiento de los subsistemas críticos. Ante una falla en uno de los subsistemas, una formación ferroviaria se detiene inmediatamente por la activación automática de las señales de corte de tracción (\textit{CT}) y frenado de emergencia (\textit{FE}). En esta situación el conductor debe llevar la formación a un lugar seguro para que los pasajeros puedan descender y, posteriormente, trasladarla a un taller para que pueda ser reparada.
-
-El \textit{SAL/T} \cite{b1}, según sus siglas, Sistema de Aislamiento Limitado o Total, es un sistema que le permite al maquinista de una formación ferroviaria la posibilidad de activar y desactivar el modo aislado limitado. A día de hoy se cuenta con un prototipo del mismo.
-
-En el modo asilado limitado, el equipo permite la circulación de la formación al desactivar las señales de corte de tracción y freno de emergencia generadas por los subsistemas críticos. Para que esta operación se complete de forma segura, se debe monitorear la velocidad de la formación tal que sea posible evitar que supere cierto valor máximo.
-
-A partir del desarrollo previo del prototipo, se presentan los avances en la implementación de una central operativa que centraliza los dispositivos SAL/T para su respectiva administación, configuración y monitoreo en tiempo real de la información recibida y transmitida desde una plataforma digital. El proyecto se desarrolla por CONICET-GICSAFe \cite{b2} para la empresa Trenes Argentinos \cite{b3}. 
-
-\section{Descripción de la problemática a resolver}
-
-Los subsistemas asociados al SAL/T, como la seguridad de puertas, el sistema de hombre vivo y la protección de coche a la deriva, son críticos debido a que, en caso de fallar, pueden ocasionar lesiones o muertes de personas e incluso generar pérdidas materiales. \\ 
-
-La central operativa permite la administración y configuración en forma remota de los dispositivos de supervisión de seguridad de cada formación ferroviaria, la visualización de los diferentes parámetros de interés involucrados por las personas asignadas dentro de una entidad y de este modo, sea posible optimizar la toma de decisiones. \\
-
-Como consecuencia de lo expresado previamente, se ha realizado el diseño de una arquitectura de \textit{software} versátil y confiable en términos de capacidad de procesamiento y de almacenamiento de la información. \\
-
-En la sección III, basándose en el \textit{stack} de una solución \textit{IoT} \cite{b4} se presentan cada una de las capas con sus respectivas tecnologías. Luego, en la sección IV se exponen las conclusiones y los próximos pasos del trabajo.
-
-
-\section{Arquitectura propuesta}
-
-En el marco del presente trabajo, la arquitectura esta estratificada en capas
-tal como se ilustra en la figura 1. En las siguientes subsecciones se describen cada una de estas capas.
-
-\begin{figure}[ht]
-\centering 
-\includegraphics[width=.48\textwidth]{images/iot-stack-v2.1.png}
-\caption{Arquitectura de la Central Operativa SAL/T.}
-\label{fig:diagBloques}
-\end{figure}
-
-\subsection{Capa de dispositivos}
-
-Sobre la base de un prototipo del Sistema de Aislamiento Limitado o Total, \textit{SAL/T}, se desarolló, en el kit de desarrollo \textit{Nucleo F429} \cite{b5}, un cliente \textit{MQTT} \cite{b6} que permite la publicación de la velocidad de la formación y de los parámetros provistos por los subsistemas de falla, entre otras variables; y llegado el caso, el dispositivo pueda realizar la lectura de diferentes parámetros configurables.
-
-\subsection{Capa de conectividad}
-
-Para la comunicación entre los dispositivos \textit{SAL/T} y la capa de almacenamiento se utiliza un \textit{Broker MQTT} que oficia de orquestador entre el cliente, el dispositivo \textit{SAL/T} que publica los mensajes y \textit{Apache Kafka} \cite{b7}, un sistema distribuido que realiza la lectura de la información y su posterior procesamiento. 
-
-Dado que los mensajes intercambiados entre las partes contienen información sensible, se ha optado por agregar la capa de seguridad \textit{TLS} \cite{b8}. En este sentido, resulta indispensable utilizar el certificado \textit{X509} \cite{b9} para prevenir ataques del tipo \textit{adversary-in-the-middle} \cite{b10} y utilizar certificados emitidos por autoridades reconocidas.
-
-
-\subsection{Capa de almacenamiento}
-
-La capa de almacenamiento se encuentra constituida por el sistema distribuido \textit{Kafka} que se encarga de almacenar los datos de la aplicación. Entre ellos se destacan los mensajes MQTT enviados por los dispositivos SAL/T, como también la información referida a las formaciones y a los SAL/T que las ocupan. Además, se tienen servicios de procesamiento de datos que se encargan de adaptar la información de los tópicos en datos que posteriormente serán consumidos por los servicios que integran la capa superior.
-
-Por otro lado, se tiene una base de datos relacional \textit{PostgreSQL} \cite{b11} que se utiliza para almacenar los datos del servicio de autenticación y el motor que facilita la interacción con la plataforma web. Los conectores se encargan de insertar los datos que se quieran disponer a la capa de visualización.
-
-\begin{figure}[ht]
-\centering 
-\includegraphics[width=.5\textwidth]{images/salt_table_v2.1.jpg}
-\caption{Modelo de datos de los dispositivos, trenes y entidades.}
-\label{fig:devicesTrainEntity}
-\end{figure}
-
-\begin{figure}[ht]
-\centering 
-\includegraphics[width=.5\textwidth]{images/fail_system_v2.1.jpg}
-\caption{Modelo de datos de los dispositivos y sus subsistemas de fallas.}
-\label{fig:devicesSubsystems}
-\end{figure}
-
-En la figura \ref{fig:devicesTrainEntity} se observa el modelo de datos que representa a los dispositivos SAL/T, las formaciones y las entidades. 
-El primero cuenta con un identificador del dispositivo en el sistema, el estado de operación y una referencia al tren en el que se desplegó el artefacto. 
-El modelo de la formación está enriquecido con la entidad a la que pertenece y el numero de serie del tren. 
-Por último, las entidades están compuestas por nombre y descripción.
-Luego, en la imagen \ref{fig:devicesSubsystems} se aprecian los subsistemas de fallas relacionados con el dispositivo SAL/T.
-Su modelo esta integrado con el nombre del subsistema, el id del dispositivo al que está asociado y el estado actual del mismo. 
-
-\subsection{Capa de interacción}
-
-La capa de interacción se encuentra conformada por tres unidades. Por un lado, se ha desarrollado en el lenguaje \textit{Kotlin} \cite{b12} en conjunto con el \textit{framework} \textit{Ktor} \cite{b13}, un microservicio de autenticación donde es posible la gestión de los usuarios con sus respectivos roles y también el \textit{backend}. Entre sus tareas principales se encuentran las relacionadas al protocolo \textit{MQTT} para la actualización de los certificados que brindan seguridad a las comunicaciones, mediante el uso de la capa de seguridad \textit{TLS}, y la indexación de los eventos que se publiquen en tiempo real; como la configuración general que permite el funcionamiento integral de los servicios y módulos dispuestos en el sistema. \\
-
-Además, se dispone del motor \textit{Hasura} \cite{b14}, el cual se encuentra conectado a una base de datos relacional (\textit{PostgreSQL}) basado en el lenguaje de consulta estructurado \textit{SQL} \cite{b15}, que permite exponer una \textit{API GraphQL} \cite{b16} a aquellos clientes que deseen obtener una visualización del modelo de datos propuesto en que se conjuga la información de cada formación ferroviaria con su correspondiente dispositivo \textit{SAL/T} y diseño destinado al \textit{frontend}. Más aún, el enlace permite realizar modificaciones y hasta remociones de las columnas propuestas en las tablas de cada esquema dentro de la base de datos.
-
-
-\subsection{Capa de visualización}
-
-En esta capa, se ha utilizado el lenguaje de programación \textit{TypeScript} \cite{b17} junto con la biblioteca gráfica \textit{React} \cite{b18} para brindar una web reactiva en la que se elaboraron los formularios, las tablas y los paneles a partir de la explotación en de los datos almacenados en la base de datos. Cabe destacar que la plataforma web se encuentra condicionada por el rol y la entidad ferroviaria a la que pertenece cada usuario.
-
-En la figura \ref{fig:dashboard} se puede apreciar el dashboard de la central operativa al que tendrán acceso los operadores de cada entidad.
-En el mismo se observan distintas tarjetas con el estado de cada subsistema de fallas y del tren, como así también un velocímetro que
-informa la velocidad de la formación.
-
-\begin{figure}[ht]
-\centering 
-\includegraphics[width=.47\textwidth]{images/cental.png}
-\caption{Panel de control de la central operativa.}
-\label{fig:dashboard}
-\end{figure}
-
-\section{Conclusiones}
-
-Se presentaron las principales características del diseño de una arquitectura en materia de \textit{software} y de \textit{firmware} para la operabilidad de los dispositivos SAL/T.
-
-Mediante los módulos desarrollados se posibilita la visualización de los usuarios y los dispositivos de cada entidad ofreciendo una solución sencilla y escalable. También, se cuenta la ingestión de la información recibida desde los dispositivos permitiendo una alta disponibilidad y operabilidad de los recursos. Por último, se cuenta con un microservicio destinado a la gestión de usuarios y perfiles que posee una alta tolerancia a fallos y adaptable.
-
-En la actualidad, se encuentra en desarrollo propiciar al operario enviar comandos de control a los dispositivos activos que tenga asignados, brindar la configuración de los parámetros de cada dispositivo y de ser deseable su correspondiente modificación y finalmente, brindar la seguridad en las comunicaciones agregando la capa \textit{TLS} en el protocolo \textit{MQTT}. 
-
-
+\balance
 \begin{thebibliography}{00}
 
 \bibitem{b1} 'Sistema de supervisión de la seguridad del material
@@ -204,14 +101,6 @@ https://attack.mitre.org/techniques/T1557/
 \end{thebibliography}
 
 \end{document}
-
-
-
-
-
-
-
-
 
 
 
