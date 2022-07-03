@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1656886320 "salt-central-operations.tex" "build/salt-central-operations.pdf" "salt-central-operations" 1656886322
+["pdflatex"] 1656887179 "salt-central-operations.tex" "build/salt-central-operations.pdf" "salt-central-operations" 1656887179
   "/etc/texmf/web2c/texmf.cnf" 1650323328 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -60,19 +60,19 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1656272306 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1656272362 8258289 b1a8456ca1d9e876dfd2ed7be547402b ""
-  "IEEEtran.cls" 1656372680 281968 219552b1eea55bb6e651bda6184fa6b9 ""
-  "build/salt-central-operations.aux" 1656886322 2571 aa8caa5caa23310a342bc99ce9113e52 "pdflatex"
+  "IEEEtran.cls" 1656886935 281969 0ac1cd615c58965cc036c3dd712650cf ""
+  "build/salt-central-operations.aux" 1656887028 2553 c9d5adc9d9303e9e77289e12ee4483d1 "pdflatex"
   "images/cental.png" 1656372680 78078 2cafac4ba2b58c883c1e094973219d1c ""
   "images/fail_system_v2.1.jpg" 1656388320 2545382 8a5069649c9aa0ab9e9c316b8ecdc3e7 ""
   "images/iot-stack-v2.1.png" 1656388320 425700 0157dd926ab97c4a93be5e0c2fda5616 ""
   "images/salt_table_v2.1.jpg" 1656388320 2275695 ac53c273ee8200ae53d12a25cebde70f ""
-  "salt-central-operations.tex" 1656873728 3114 dc93307e2bec762b8577b9a1c4851e0b ""
+  "salt-central-operations.tex" 1656886755 3115 0ed3e8ca863553cd52e25318da515a96 ""
   "sections/abstract_keywords.tex" 1656873728 740 d591e39f275c992554e719461dcf8a58 ""
-  "sections/conclusions.tex" 1656886319 820 16c03ebf0c25c58d2467ca595c92652f ""
-  "sections/motivation_context.tex" 1656884275 1857 0fb146af344ae53e181bff790fba6158 ""
+  "sections/conclusions.tex" 1656886402 820 16c03ebf0c25c58d2467ca595c92652f ""
+  "sections/motivation_context.tex" 1656887025 1857 6cd7b5997545476275cb72adf015492d ""
   "sections/problematic.tex" 1656884300 1809 3ad3f79408336fdb910aec3bb374cf56 ""
-  "sections/proposed_architecture.tex" 1656873728 6168 6b04ae689deb3648f261cfa2d7170cb0 ""
+  "sections/proposed_architecture.tex" 1656887178 6164 2bfd78e8f9a10a14e1164b385912d836 ""
   (generated)
-  "build/salt-central-operations.log"
   "build/salt-central-operations.aux"
   "build/salt-central-operations.pdf"
+  "build/salt-central-operations.log"
