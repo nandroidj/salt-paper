@@ -21,11 +21,10 @@ Art√≠culo acad√©mico sobre la Central Operativa SAL/T para el Congreso Argentino
     Reformular el primer parrafo tal que sugiera formar parte de la problem√°tica (pre SAL&T) y luego anunciar al SAL/T como solucion
 
 
-
     - **Ari**: 
-          Esta parte entra un poco en contradicción con lo que escribimos en el resumen. Como que en el resumen se indica que la formación queda paralizada, lo cual es cierto. Acá sin embargo se dice que el conductor debe mover la formación. Me parece que acá sería bueno repetir un poco la idea del resumen, respecto a que la formación queda paralizada y agregar esto respecto a que sin embargo es necesario mover a la formación al lugar seguro y luego al taller. 
+          Esta parte entra un poco en contradicci?n con lo que escribimos en el resumen. Como que en el resumen se indica que la formaci?n queda paralizada, lo cual es cierto. Ac? sin embargo se dice que el conductor debe mover la formaci?n. Me parece que ac? ser?a bueno repetir un poco la idea del resumen, respecto a que la formaci?n queda paralizada y agregar esto respecto a que sin embargo es necesario mover a la formaci?n al lugar seguro y luego al taller. 
 
-          Fijate que en el párrafo siguiente se habla del SAL/T pero no se lo relaciona con este tema en forma directa. O sea, no se indica que el SAL/T es el sistema que permite que esto se realice. Creo que habría que revisar un poco todo esto para que queden mejor iladas las ides.
+          Fijate que en el p?rrafo siguiente se habla del SAL/T pero no se lo relaciona con este tema en forma directa. O sea, no se indica que el SAL/T es el sistema que permite que esto se realice. Creo que habr?a que revisar un poco todo esto para que queden mejor iladas las ides.
 
     - **Respuesta** pasando en limpio, lo que podr√≠amos hacer es reformular como expresamos el primer p√°rrafo tal que sugiera formar parte de la problem√°tica propuesta y luego anunciar al SAL/T como soluci√≥n.kk
 
