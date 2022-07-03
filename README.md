@@ -16,7 +16,7 @@ Artículo académico sobre la Central Operativa SAL/T para el Congreso Argentino
 
 ## ToDo
 
-- **Motivacion y Contexto**
+- **Motivacion y Contexto**         **[ OK ]**
 
     Reformular el primer parrafo tal que sugiera formar parte de la problemática (pre SAL&T) y luego anunciar al SAL/T como solucion
 
