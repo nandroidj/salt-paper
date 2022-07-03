@@ -1,11 +1,17 @@
-
 \section{Descripción de la problemática a resolver}
 
-Los subsistemas asociados al SAL/T, como la seguridad de puertas, el sistema de hombre vivo y la protección de coche a la deriva, son críticos debido a que, en caso de fallar, pueden ocasionar lesiones o muertes de personas e incluso generar pérdidas materiales. \\ 
+Los subsistemas asociados al SAL/T, como la seguridad de puertas, el sistema de hombre vivo y la protección de coche a la deriva, son críticos debido a que, en caso de fallar, pueden ocasionar lesiones o muertes de personas e incluso generar pérdidas materiales. 
 
-La central operativa permite la administración y configuración en forma remota de los dispositivos de supervisión de seguridad de cada formación ferroviaria, la visualización de los diferentes parámetros de interés involucrados por las personas asignadas dentro de una entidad y de este modo, sea posible optimizar la toma de decisiones. \\
+La central operativa permite la administración y configuración en forma remota de los dispositivos de supervisión de seguridad de cada formación ferroviaria, la visualización de los diferentes parámetros de interés involucrados por las personas asignadas dentro de una entidad y de este modo, sea posible optimizar la toma de decisiones. 
 
-Como consecuencia de lo expresado previamente, se ha realizado el diseño de una arquitectura de \textit{software} versátil y confiable en términos de capacidad de procesamiento y de almacenamiento de la información. \\
+A partir de los modelos más relevantes que se encuentran establecidos para el desarrollo e implementación de aplicaciones de software se consideran el stack web y el stack IoT \cite{b4} . 
+Dadas las similitudes entre las capas de ambos esquemas, excepto en la capa de aplicación, donde el stack web emplea el protocolo HTTP mientras que el stack IoT utiliza el protocolo MQTT; siendo
+este último el más adecuado para escenarios donde son limitados los recursos como el ancho de banda y el consumo de energía.
 
-En la sección III, basándose en el \textit{stack} de una solución \textit{IoT} \cite{b4} se presentan cada una de las capas con sus respectivas tecnologías. Luego, en la sección IV se exponen las conclusiones y los próximos pasos del trabajo.
+En especial, el protocolo MQTT dispone de mensajes más livianos y además es posible transmitir y/o recibir datos en formato binario sin la necesidad de una codificación previa.
+También, este protocolo permite asignar niveles de calidad de servicio (QoS) a los mensajes transmitidos, 
+resultando una característica primordial en aplicaciones donde la probabilidad de pérdidas de paquetes es considerable.
+
+La sección III presenta cada una de las capas con sus respectivas tecnologías en base al stack descripto anteriormente. Luego, en la sección IV se exponen las conclusiones y los próximos pasos del trabajo.
+
 
