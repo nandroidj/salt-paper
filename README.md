@@ -65,16 +65,16 @@ Artículo académico sobre la Central Operativa SAL/T para el Congreso Argentino
 
     * Tamaño de archivo menor o igual a 1024 Kbytes.
 
-    * Sacarle la numeracion a las paginas en el margen superior derecho
+    * Sacarle la numeracion a las paginas en el margen superior derecho                   **[ OK ]**
 
-    * Repaso del doble ciego
+    * Repaso del doble ciego                                                              **[ OK ]**
 
     * Ultima columna esta desbalanceada
       
           Ultima columna no esta balanceada: Si trabaja con Latex: Usar el package balance \usepackage{balance} y luego en cualquier lugar de la ultima pagina poner el comando \balance
           automaticamente se balancean las columnas sin tener que hacer ningun calculo.
           
-    * Ver ref. a paginas web. Debe incluir fecha de acceso actualizada.
+    * Ver ref. a paginas web. Debe incluir fecha de acceso actualizada.                   **[ OK ]**
 
     * Tamaño: Figs 2, 3 y 4 muy chicas
 

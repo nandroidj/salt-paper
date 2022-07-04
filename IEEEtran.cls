@@ -5627,11 +5627,6 @@ between column types.}%
      \global\@namedef{end#1}{\@endtheorem}}}
 
 
-
-%% SET UP THE DEFAULT PAGESTYLE
-\pagestyle{headings}
-%\pagenumbering{arabic}
-
 % normally the page counter starts at 1
 \setcounter{page}{1}
 % however, for peerreview the cover sheet is page 0 or page -1
