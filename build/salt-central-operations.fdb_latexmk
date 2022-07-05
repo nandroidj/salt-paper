@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1656943985 "salt-central-operations.tex" "build/salt-central-operations.pdf" "salt-central-operations" 1656943985
+["pdflatex"] 1656982936 "salt-central-operations.tex" "build/salt-central-operations.pdf" "salt-central-operations" 1656982937
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -59,18 +59,17 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1653695412 2826438 134a857711832e53146a4a8acb740aa3 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "IEEEtran.cls" 1656889389 281890 adf3f8687769b68dfa0468554890d84e ""
-  "build/salt-central-operations.aux" 1656943964 2671 45abf1c0b6e8ca24b8bb3709596bb9d8 "pdflatex"
+  "IEEEtran.cls" 1656981591 281967 58787f0d87acabab6c40127da2714d1c ""
+  "build/salt-central-operations.aux" 1656982937 2566 231ce25a6455eab251f536c61470541f "pdflatex"
   "images/v2.1.0/cuadro.jpg" 1656908540 348454 20c8f68d519e1c643804ab92485afb9c ""
   "images/v2.1.0/dashboard.jpg" 1656908569 190141 299a707d6ca75508e0f6d059645585f7 ""
   "images/v2.1.0/device_fail_system.jpg" 1656940139 366578 e1640a494d1c99a5426977b3922a1221 ""
   "images/v2.1.0/device_train_entity.jpg" 1656939362 333441 d34389117c2168f6d7f4f6d40335966f ""
-  "salt-central-operations.tex" 1656895316 3513 4e9c6f663e35b49e360a39ecb9c15d19 ""
-  "sections/abstract_keywords.tex" 1656802093 740 d591e39f275c992554e719461dcf8a58 ""
-  "sections/conclusions.tex" 1656886774 820 16c03ebf0c25c58d2467ca595c92652f ""
-  "sections/motivation_context.tex" 1656889220 1857 6cd7b5997545476275cb72adf015492d ""
-  "sections/problematic.tex" 1656893684 1886 78985e377bfb91aff85c2202249e7886 ""
-  "sections/proposed_architecture.tex" 1656943983 6197 db110335fdbc47e47e692d299888abf7 ""
+  "salt-central-operations.tex" 1656981448 3454 1c05f295eec031ff72e1909f45e42770 ""
+  "sections/abstract_keywords.tex" 1656969324 734 26df506f50b5a541d43df4c28cdf21eb ""
+  "sections/conclusions.tex" 1656982789 818 2964ae6cbd02bd1fb29bc14f4aa14163 ""
+  "sections/motivation_context.tex" 1656981306 2667 5c2dc253772a93c27246ba7dcd9016cf ""
+  "sections/proposed_architecture.tex" 1656982935 7164 720823567e654b0d4ebee413df57839e ""
   (generated)
   "build/salt-central-operations.aux"
   "build/salt-central-operations.log"

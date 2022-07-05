@@ -5274,7 +5274,7 @@ between column types.}%
 % so that spacing is more tightly controlled.
 \def\abstract{\normalfont
     \if@twocolumn
-      \@IEEEabskeysecsize\bfseries\textit{\abstractname}--- \relax
+      \@IEEEabskeysecsize\bfseries\textit{\abstractname}---\relax
     \else
       \bgroup\par\addvspace{0.5\baselineskip}\centering\vspace{-1.78ex}\@IEEEabskeysecsize\textbf{\abstractname}\par\addvspace{0.5\baselineskip}\egroup\quotation\@IEEEabskeysecsize
     \fi\@IEEEgobbleleadPARNLSP}
@@ -5626,6 +5626,11 @@ between column types.}%
      \global\@namedef{#1}{\@thm{#1}{#2}}%
      \global\@namedef{end#1}{\@endtheorem}}}
 
+
+
+%% SET UP THE DEFAULT PAGESTYLE
+\pagestyle{headings}
+\pagenumbering{arabic}
 
 % normally the page counter starts at 1
 \setcounter{page}{1}

@@ -1,10 +1,13 @@
 
 \section{Arquitectura propuesta}
 
-En el marco del presente trabajo, la arquitectura esta estratificada en capas
-tal como se ilustra en la figura 1. En las siguientes subsecciones se describen cada una de estas capas.
+A partir de los modelos más relevantes que se encuentran establecidos para el desarrollo e implementación de aplicaciones de software se consideran el \textit{stack web} y el \textit{stack IoT}. Dadas las similitudes entre las capas de ambos esquemas, excepto en la capa de aplicación, donde el stack web emplea el protocolo \textit{HTTP} \cite{b5} mientras que el \textit{stack IoT} utiliza el protocolo \textit{MQTT} \cite{b6}; siendo este último el más adecuado para escenarios donde son limitados los recursos como el ancho de banda y el consumo de energía.
 
-\begin{figure}[ht]
+En especial, el protocolo \textit{MQTT} dispone de mensajes más livianos y además es posible transmitir y/o recibir datos en formato binario sin la necesidad de una codificación previa. También, este protocolo permite asignar niveles de calidad de servicio (\textit{QoS}) \cite{b7} a los mensajes transmitidos, resultando una característica primordial en aplicaciones donde la probabilidad de pérdidas de paquetes es considerable.
+
+La figura 1 presenta la estratificación de las capas, según el \textit{stack IoT}, que son detalladas a lo largo de esta sección.  
+
+\begin{figure}[htp]
   \centering 
   \includegraphics[width=.48\textwidth]{images/v2.1.0/cuadro.jpg}
   \caption{Arquitectura de la Central Operativa SAL/T.}
@@ -13,7 +16,7 @@ tal como se ilustra en la figura 1. En las siguientes subsecciones se describen 
 
 \subsection{Capa de dispositivos}
 
-Sobre la base de un prototipo del Sistema de Aislamiento Limitado o Total, \textit{SAL/T}, se desarolló, en el kit de desarrollo \textit{Nucleo F429} \cite{b8}, un cliente \textit{MQTT} que permite la publicación de la velocidad de la formación y de los parámetros provistos por los subsistemas de falla, entre otras variables; y llegado el caso, el dispositivo pueda realizar la lectura de diferentes parámetros configurables.
+Sobre la base de un prototipo del Sistema de Aislamiento Limitado o Total, \textit{SAL/T} \cite{b1}, se desarolló mediante el kit de desarrollo \textit{Nucleo F429} \cite{b8}, un cliente \textit{MQTT} que permite la publicación de la velocidad de la formación y de los parámetros provistos por los subsistemas de falla, entre otras variables; y llegado el caso, el dispositivo pueda realizar la lectura de diferentes parámetros configurables.
 
 \subsection{Capa de conectividad}
 
@@ -46,7 +49,7 @@ En la figura \ref{fig:devicesTrainEntity} se observa el modelo de datos que repr
 El primero cuenta con un identificador del dispositivo en el sistema, el estado de operación y una referencia al tren en el que se desplegó el artefacto. 
 El modelo de la formación está enriquecido con la entidad a la que pertenece y el numero de serie del tren. 
 Por último, las entidades están compuestas por nombre y descripción.
-Luego, en la imagen \ref{fig:devicesSubsystems} se aprecian los subsistemas de fallas relacionados con el dispositivo SAL/T.
+En la figura \ref{fig:devicesSubsystems} se aprecian los subsistemas de fallas relacionados con el dispositivo SAL/T.
 Su modelo esta integrado con el nombre del subsistema, el id del dispositivo al que está asociado y el estado actual del mismo. 
 
 \subsection{Capa de interacción}
@@ -58,7 +61,7 @@ Además, se dispone del motor \textit{Hasura} \cite{b16}, el cual se encuentra c
 
 \subsection{Capa de visualización}
 
-En esta capa, se ha utilizado el lenguaje de programación \textit{TypeScript} \cite{b19} junto con la biblioteca gráfica \textit{React} \cite{b20} para brindar una web reactiva en la que se elaboraron los formularios, las tablas y los paneles a partir de la explotación en de los datos almacenados en la base de datos. Cabe destacar que la plataforma web se encuentra condicionada por el rol y la entidad ferroviaria a la que pertenece cada usuario.
+En esta capa se ha utilizado el lenguaje de programación \textit{TypeScript} \cite{b19} junto con la biblioteca gráfica \textit{React} \cite{b20} para brindar una web reactiva en la que se elaboraron los formularios, las tablas y los paneles a partir de la explotación en de los datos almacenados en la base de datos. Cabe destacar que la plataforma web se encuentra condicionada por el rol y la entidad ferroviaria a la que pertenece cada usuario.
 
 En la figura \ref{fig:dashboard} se puede apreciar el dashboard de la central operativa al que tendrán acceso los operadores de cada entidad.
 En el mismo se observan distintas tarjetas con el estado de cada subsistema de fallas y del tren, como así también un velocímetro que

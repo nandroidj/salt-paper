@@ -342,13 +342,6 @@ INPUT ./sections/motivation_context.tex
 INPUT ./sections/motivation_context.tex
 INPUT sections/motivation_context.tex
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmrc7t.tfm
-INPUT ./sections/problematic.tex
-INPUT ./sections/problematic.tex
-INPUT ./sections/problematic.tex
-INPUT sections/problematic.tex
-INPUT ./sections/problematic.tex
-INPUT ./sections/problematic.tex
-INPUT sections/problematic.tex
 INPUT ./sections/proposed_architecture.tex
 INPUT ./sections/proposed_architecture.tex
 INPUT ./sections/proposed_architecture.tex
@@ -367,10 +360,10 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
