@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.27)  4 JUL 2022 22:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.27)  4 JUL 2022 23:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -291,16 +291,16 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./sections/abstract_keywords.tex) (./sections/motivation_context.tex) (./sections/proposed_architecture.tex
-<images/v2.1.0/cuadro.jpg, id=1, 1816.7875pt x 1606.0pt>
-File: images/v2.1.0/cuadro.jpg Graphic file (type jpg)
-<use images/v2.1.0/cuadro.jpg>
-Package pdftex.def Info: images/v2.1.0/cuadro.jpg  used on input line 12.
+<images/v2.1.0/cuadro.png, id=1, 1816.7875pt x 1606.0pt>
+File: images/v2.1.0/cuadro.png Graphic file (type png)
+<use images/v2.1.0/cuadro.png>
+Package pdftex.def Info: images/v2.1.0/cuadro.png  used on input line 12.
 (pdftex.def)             Requested size: 247.6778pt x 218.93263pt.
  [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-<images/v2.1.0/device_train_entity.jpg, id=11, 4233.8175pt x 1660.2025pt>
+<images/v2.1.0/device_train_entity.jpg, id=12, 4233.8175pt x 1660.2025pt>
 File: images/v2.1.0/device_train_entity.jpg Graphic file (type jpg)
 <use images/v2.1.0/device_train_entity.jpg>
 Package pdftex.def Info: images/v2.1.0/device_train_entity.jpg  used on input line 36.
@@ -310,7 +310,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 36--37
  [][] 
  []
 
-<images/v2.1.0/device_fail_system.jpg, id=12, 4087.27pt x 1212.53pt>
+<images/v2.1.0/device_fail_system.jpg, id=13, 4087.27pt x 1212.53pt>
 File: images/v2.1.0/device_fail_system.jpg Graphic file (type jpg)
 <use images/v2.1.0/device_fail_system.jpg>
 Package pdftex.def Info: images/v2.1.0/device_fail_system.jpg  used on input line 43.
@@ -325,36 +325,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
-[2 <./images/v2.1.0/cuadro.jpg> <./images/v2.1.0/device_train_entity.jpg> <./images/v2.1.0/device_fail_system.jpg>]
-<images/v2.1.0/dashboard.jpg, id=16, 1003.75pt x 680.5425pt>
+[2 <./images/v2.1.0/cuadro.png> <./images/v2.1.0/device_train_entity.jpg> <./images/v2.1.0/device_fail_system.jpg>]
+<images/v2.1.0/dashboard.jpg, id=18, 1003.75pt x 680.5425pt>
 File: images/v2.1.0/dashboard.jpg Graphic file (type jpg)
 <use images/v2.1.0/dashboard.jpg>
 Package pdftex.def Info: images/v2.1.0/dashboard.jpg  used on input line 72.
 (pdftex.def)             Requested size: 247.6778pt x 167.92336pt.
 ) (./sections/conclusions.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 \OT1/ptm/m/n/8 https://www.hivemq.com/blog/mqtt-essentials-part-6-mqtt-quality-of-
  []
 
 
-Underfull \hbox (badness 2027) in paragraph at lines 76--77
+Underfull \hbox (badness 2027) in paragraph at lines 75--76
 \OT1/ptm/m/n/8 Disponible: https://www.hivemq.com/blog/mqtt-security-fundamentals-
  []
 
 [3 <./images/v2.1.0/dashboard.jpg>] (build/salt-central-operations.aux) ) 
 Here is how much of TeX's memory you used:
- 5438 strings out of 478268
- 91065 string characters out of 5846347
+ 5439 strings out of 478268
+ 91069 string characters out of 5846347
  397524 words of memory out of 5000000
  23597 multiletter control sequences out of 15000+600000
  503588 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,7n,63p,850b,324s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on build/salt-central-operations.pdf (3 pages, 1310021 bytes).
+Output written on build/salt-central-operations.pdf (3 pages, 1022212 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
- 21 compressed objects within 1 object stream
+ 41 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
