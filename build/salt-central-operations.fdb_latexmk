@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1656986459 "salt-central-operations.tex" "build/salt-central-operations.pdf" "salt-central-operations" 1656986460
+["pdflatex"] 1658881930 "salt-central-operations.tex" "build/salt-central-operations.pdf" "salt-central-operations" 1658881931
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -59,17 +59,17 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1653695412 2826438 134a857711832e53146a4a8acb740aa3 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "IEEEtran.cls" 1656985682 281967 69a75c969107f067fe1a554aff6a2cb3 ""
-  "build/salt-central-operations.aux" 1656986460 2549 77c69b4966a301b08c8702be20bb74f0 "pdflatex"
-  "images/v2.1.0/cuadro.png" 1656907564 67583 4bb3bf153362169bd97414dd7985c1fc ""
+  "IEEEtran.cls" 1658881576 281967 69a75c969107f067fe1a554aff6a2cb3 ""
+  "build/salt-central-operations.aux" 1658881931 2549 eebc59eb19b6555243a432bfb1c0d899 "pdflatex"
+  "images/v2.1.0/cuadro.jpg" 1658880377 150178 f129d89630638d4533375634ebfe1092 ""
   "images/v2.1.0/dashboard.jpg" 1656908569 190141 299a707d6ca75508e0f6d059645585f7 ""
   "images/v2.1.0/device_fail_system.jpg" 1656986226 366505 2a51870054423949d70c021a42d06989 ""
   "images/v2.1.0/device_train_entity.jpg" 1656986166 333441 d34389117c2168f6d7f4f6d40335966f ""
-  "salt-central-operations.tex" 1656984606 3453 b6def4127ad73ab16e7073c755560c0e ""
-  "sections/abstract_keywords.tex" 1656969324 734 26df506f50b5a541d43df4c28cdf21eb ""
-  "sections/conclusions.tex" 1656982789 818 2964ae6cbd02bd1fb29bc14f4aa14163 ""
-  "sections/motivation_context.tex" 1656981306 2667 5c2dc253772a93c27246ba7dcd9016cf ""
-  "sections/proposed_architecture.tex" 1656986459 7133 e546ca65b0cac5dbb3e3af5a3e43b985 ""
+  "salt-central-operations.tex" 1658881929 3473 cfe272d356d1d8f40c90bc07cd6828c5 ""
+  "sections/abstract_keywords.tex" 1658875956 735 0a333a53956cb74c3538ce818b58e6c2 ""
+  "sections/conclusions.tex" 1658876142 821 4a82e0a23be43e824863e4b1d801c90f ""
+  "sections/motivation_context.tex" 1658876697 2676 26d42e63e12d222ccdf7677b4d5903e7 ""
+  "sections/proposed_architecture.tex" 1658881929 7347 83371b9c28c47ed15614f6c142487be9 ""
   (generated)
   "build/salt-central-operations.aux"
   "build/salt-central-operations.log"
